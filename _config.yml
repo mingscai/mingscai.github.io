@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Mingsheng Cai"
+title                    : "Mingsheng Cai - Homepage"
 description              : "PhD student at The University of Edinburgh, focusing on ML4Security."
 repository               : "mingscai/mingscai.github.io"
 google_scholar_stats_use_cdn : true
