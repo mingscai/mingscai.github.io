@@ -84,3 +84,5 @@ TBD.
     src="https://embed.music.apple.com/cn/album/%E9%9B%A8%E5%A4%A9/280798610?i=280798617&l=en-GB">
   </iframe>
 </div>
+
+<div id="map-mobile-placeholder" style="display: none; margin-top: 20px; margin-bottom: 20px"></div>

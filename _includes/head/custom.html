@@ -20,4 +20,26 @@
 </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
 
+<script>
+  function isMobile() {
+    return window.innerWidth <= 768;
+  }
+
+  function moveMapIfMobile() {
+    const mapDiv = document.getElementById("map-container");
+    const mobilePlaceholder = document.getElementById("map-mobile-placeholder");
+    
+    if (isMobile() && mapDiv && mobilePlaceholder) {
+      // 移动地图 script 到正文
+      mobilePlaceholder.style.display = 'block';
+      mobilePlaceholder.appendChild(mapDiv);
+    }
+  }
+
+  // 页面加载时判断一次
+  window.addEventListener("DOMContentLoaded", moveMapIfMobile);
+  // 如果用户手动调整窗口大小，也重新判断
+  window.addEventListener("resize", moveMapIfMobile);
+</script>
+  
 <!-- end custom head snippets -->
