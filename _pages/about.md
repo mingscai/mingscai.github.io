@@ -33,19 +33,21 @@ I received my Master’s degree from Imperial College London, where I was superv
 
 # 📝 Publications 
 
-TBD.
-
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/supreme.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[SuPreME: A Supervised Pre-training Framework for Multimodal ECG Representation Learning](https://arxiv.org/abs/2502.19668)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+**Mingsheng Cai**, Jiuming Jiang, Wenhao Huang, Che Liu, Rossella Arcucci
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+[**Code**]() | [**Dataset**]() | [**Model**]()<strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- Automated annotation of MIMIC-IV-ECG dataset with LLMs and medical DBs.
+
+- Entity-level alignment of ECG signals via pre-training the SuPreME framework.
+
+- SOTA zero-shot performance with high data efficiency across six downstream datasets, i.e. PTB-XL (Super-class, Sub-class, Form, Rhythm), CPSC-2018, CSN.
 </div>
-</div> -->
+</div>
 
 <!-- - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
