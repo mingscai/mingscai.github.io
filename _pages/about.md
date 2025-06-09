@@ -25,6 +25,7 @@ I received my Master’s degree from Imperial College London, where I was superv
 
 
 # 🔥 News
+- 🎉 *Jun 2025*: One paper was accepted to the FMSD Workshop at <img src="images/icml-logo.svg" width="20"/> ICML'25.
 - 📰 *Nov 2024*: I started my Doctor's degree in Informatics at The University of Edinburgh supervised by Dr. Adriana Sejfia and Dr. Amir Shaikhha.
 - 🎉 *Sep 2024*: I graduated with Distinction from Imperial College London.
 - 📰 *May 2024*: Glad to start my capstone project in <img src="images/dsi-logo.svg" width="20"/> [Imperial Data Science Institute](https://www.imperial.ac.uk/data-science/) supervised by Dr. Che Liu and Dr. Rossella Arcucci.
@@ -46,6 +47,21 @@ I received my Master’s degree from Imperial College London, where I was superv
 - Entity-level alignment of ECG signals via pre-training the SuPreME framework.
 
 - SOTA zero-shot performance with high data efficiency across six downstream datasets, i.e. PTB-XL (Super-class, Sub-class, Form, Rhythm), CPSC-2018, CSN.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">FMSD@ICML'25</div><img src='images/llm4ecg.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Towards Generalizable Multimodal ECG Representation Learning with LLM-extracted Clinical Entities](https://openreview.net/forum?id=bcG1W2T0Xx)
+
+**Mingsheng Cai**, Jiuming Jiang, Wenhao Huang, Che Liu, Rossella Arcucci
+
+- LLM-extracted clinical entities enable structured ECG supervision.
+
+- Outperformed existing self-supervised methods with significantly improved data efficiency.
+
+- Enabled scalable ECG representation learning without extensive expert annotations.
 </div>
 </div>
 
