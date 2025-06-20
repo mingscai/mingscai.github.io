@@ -50,7 +50,7 @@ I received my Master’s degree from Imperial College London, where I was superv
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">FMSD@ICML'25</div><img src='images/llm4ecg.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">FMSD@ICML'25 Spotlight</div><img src='images/llm4ecg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Towards Generalizable Multimodal ECG Representation Learning with LLM-extracted Clinical Entities](https://openreview.net/forum?id=bcG1W2T0Xx)
