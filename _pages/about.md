@@ -17,9 +17,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently a PhD student at The University of Edinburgh supervised by [Dr. Adriana Sejfia](https://www.linkedin.com/in/adriana-sejfia/?originalSubdomain=uk) and [Dr. Amir Shaikhha](https://www.linkedin.com/in/amir-shaikhha-44985841/).
+I am currently a PhD student at The University of Edinburgh supervised by [Dr. Adriana Sejfia](https://www.linkedin.com/in/adriana-sejfia/) and [Dr. Amir Shaikhha](https://www.linkedin.com/in/amir-shaikhha-44985841/).
 
-I received my Master’s degree from Imperial College London, where I was supervised by [Dr. Che Liu](https://www.linkedin.com/in/liu-che-32aaa7b1/?originalSubdomain=uk) and [Dr. Rossella Arcucci](https://www.linkedin.com/in/rossella-arcucci-723a2b65/). Prior to that, I obtained my Bachelor’s degree from Beihang University, under the supervision of [Dr. Yuan Yuan](https://scse.buaa.edu.cn/info/1387/10369.htm).
+I received my Master’s degree from Imperial College London, where I was supervised by [Dr. Che Liu](https://www.linkedin.com/in/che-liu-32abcs7b1/) and [Dr. Rossella Arcucci](https://www.linkedin.com/in/rossella-arcucci-723a2b65/). Prior to that, I obtained my Bachelor’s degree from Beihang University, under the supervision of [Dr. Yuan Yuan](https://scse.buaa.edu.cn/info/1387/10369.htm).
 
 <!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
