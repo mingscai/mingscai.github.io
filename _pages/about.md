@@ -25,6 +25,7 @@ I received my Master’s degree from Imperial College London, where I was superv
 
 
 # 🔥 News
+- 🏆 Jul 2025: Thrilled to receive the Best Application Paper Award at the FMSD workshop at <img src="images/icml-logo.svg" width="20"/> ICML'25.
 - 🎉 *Jun 2025*: One paper was accepted as a spotlight presentation at the FMSD workshop at <img src="images/icml-logo.svg" width="20"/> ICML'25.
 - 📰 *Nov 2024*: I started my Doctor's degree in Informatics at The University of Edinburgh supervised by Dr. Adriana Sejfia and Dr. Amir Shaikhha.
 - 🎉 *Sep 2024*: I graduated with Distinction from Imperial College London.
