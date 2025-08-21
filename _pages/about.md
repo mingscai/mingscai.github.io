@@ -25,8 +25,9 @@ I received my Master’s degree from Imperial College London, where I was superv
 
 
 # 🔥 News
-- 🏆 Jul 2025: Thrilled to receive the Best Application Paper Award at the FMSD workshop at <img src="images/icml-logo.svg" width="20"/> ICML'25.
-- 🎉 *Jun 2025*: One paper was accepted as a spotlight presentation at the FMSD workshop at <img src="images/icml-logo.svg" width="20"/> ICML'25.
+- 🎉 *Aug 2025*: One paper was accepted to Findings of <img src="images/acl-logo.svg" width="20"/> EMNLP 2025.
+- 🏆 Jul 2025: Thrilled to receive the Best Application Paper Award at the FMSD workshop at <img src="images/icml-logo.svg" width="20"/> ICML 2025.
+- 🎉 *Jun 2025*: One paper was accepted as a spotlight presentation at the FMSD workshop at <img src="images/icml-logo.svg" width="20"/> ICML 2025.
 - 📰 *Nov 2024*: I started my Doctor's degree in Informatics at The University of Edinburgh supervised by Dr. Adriana Sejfia and Dr. Amir Shaikhha.
 - 🎉 *Sep 2024*: I graduated with Distinction from Imperial College London.
 - 📰 *May 2024*: Glad to start my capstone project in <img src="images/dsi-logo.svg" width="20"/> [Imperial Data Science Institute](https://www.imperial.ac.uk/data-science/) supervised by Dr. Che Liu and Dr. Rossella Arcucci.
@@ -35,7 +36,7 @@ I received my Master’s degree from Imperial College London, where I was superv
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/supreme.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2025</div><img src='images/supreme.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [SuPreME: A Supervised Pre-training Framework for Multimodal ECG Representation Learning](https://arxiv.org/abs/2502.19668)
@@ -51,7 +52,7 @@ I received my Master’s degree from Imperial College London, where I was superv
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">FMSD@ICML'25 Spotlight</div><img src='images/llm4ecg.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">FMSD @ ICML 2025</div><div class="badge">Spotlight & Best Paper Award</div><img src='images/llm4ecg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Towards Generalizable Multimodal ECG Representation Learning with LLM-extracted Clinical Entities](https://openreview.net/forum?id=bcG1W2T0Xx)
@@ -85,6 +86,7 @@ I received my Master’s degree from Imperial College London, where I was superv
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 # 🧑‍🏫 Teaching and Service
+- *Sep 2025 - Jan 2026*, Teaching Assistant, INFR08032 - Software Engineering and Professional Practice, The University of Edinburgh, Edinburgh, United Kingdom.
 - *Feb 2022 - Jun 2022*, Teaching Assistant, B1B061060 - Discrete Mathematics, Beihang University, Beijing, China.
 
 
