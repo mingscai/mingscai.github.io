@@ -43,7 +43,7 @@ I received my Master’s degree from Imperial College London, where I was superv
 
 **Mingsheng Cai**, Jiuming Jiang, Wenhao Huang, Che Liu, Rossella Arcucci
 
-[**Code**]() | [**Dataset**]() | [**Model**]()<strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Code**](https://github.com/mingscai/SuPreME) | [**Dataset**](https://huggingface.co/datasets/mingscai/SuPreME) | [**Model**](https://huggingface.co/mingscai/SuPreME)<strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - Automated annotation of MIMIC-IV-ECG dataset with LLMs and medical DBs.
 
 - Entity-level alignment of ECG signals via pre-training the SuPreME framework.
