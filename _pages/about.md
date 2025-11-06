@@ -39,7 +39,7 @@ I received my Master’s degree from Imperial College London, where I was superv
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2025</div><img src='images/supreme.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[SuPreME: A Supervised Pre-training Framework for Multimodal ECG Representation Learning](https://arxiv.org/abs/2502.19668)
+[SuPreME: A Supervised Pre-training Framework for Multimodal ECG Representation Learning](https://aclanthology.org/2025.findings-emnlp.633/)
 
 **Mingsheng Cai**, Jiuming Jiang, Wenhao Huang, Che Liu, Rossella Arcucci
 
