@@ -25,8 +25,8 @@ I received my Master’s degree from Imperial College London, where I was superv
 
 
 # 🔥 News
-- 🎉 *Aug 2025*: One paper was accepted to Findings of <img src="images/acl-logo.svg" width="20"/> EMNLP 2025.
-- 🏆 Jul 2025: Thrilled to receive the Best Application Paper Award at the FMSD workshop at <img src="images/icml-logo.svg" width="20"/> ICML 2025.
+- 🎉 *Aug 2025*: One paper was accepted to <img src="images/acl-logo.svg" width="20"/> EMNLP 2025.
+- 🏆 Jul 2025: Thrilled to receive the Best Paper Award at the FMSD workshop at <img src="images/icml-logo.svg" width="20"/> ICML 2025.
 - 🎉 *Jun 2025*: One paper was accepted as a spotlight presentation at the FMSD workshop at <img src="images/icml-logo.svg" width="20"/> ICML 2025.
 - 📰 *Nov 2024*: I started my Doctor's degree in Informatics at The University of Edinburgh supervised by Dr. Adriana Sejfia and Dr. Amir Shaikhha.
 - 🎉 *Sep 2024*: I graduated with Distinction from Imperial College London.
@@ -70,6 +70,7 @@ I received my Master’s degree from Imperial College London, where I was superv
 <!-- - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
 # 🎖 Honors and Awards
+- *Jul 2025*, Best Paper Award, 1st ICML Workshop on Foundation Models for Structured Data.
 - *Jun 2023*, Distinguished Graduate, Beihang University.
 - *Oct 2022*, Future Star Scholarship, Ministry of Education of the People's Republic of China.
 - *Oct 2022*, Huawei Scholarship.
