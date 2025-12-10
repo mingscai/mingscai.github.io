@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Mingsheng Cai - Homepage"
+title                    : "Mingsheng Cai"
 description              : "PhD student at The University of Edinburgh, focusing on ML4Security."
 repository               : "mingscai/mingscai.github.io"
 google_scholar_stats_use_cdn : true
@@ -28,7 +28,7 @@ author:
   employer         : "University of Edinburgh"
   pubmed           : 
   googlescholar    : # "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
-  email            : "m.cai@ed.ac.uk"
+  email            : "mingsheng.cai@ed.ac.uk"
   researchgate     : # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -45,7 +45,7 @@ author:
   lastfm           :
   linkedin         : "mscai"
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
-  orcid            : # e.g., "https://orcid.org/xxxx"
+  orcid            : # "https://orcid.org/0009-0007-8007-1528"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
