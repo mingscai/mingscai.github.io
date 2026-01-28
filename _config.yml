@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Mingsheng Cai"
-description              : "PhD student at The University of Edinburgh, focusing on ML4Security."
+# description              : "PhD student at The University of Edinburgh, focusing on ML4Security."
 repository               : "mingscai/mingscai.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -24,11 +24,11 @@ author:
   name             : "Mingsheng Cai"
   avatar           : "images/android-chrome-512x512.png"
   bio              : "/ˈmɪŋ-ʃɛŋ tsaɪ/"
-  location         : "Edinburgh, UK"
-  employer         : "University of Edinburgh"
+  location         : "United Kingdom" # "Edinburgh, UK"
+  employer         : # "University of Edinburgh"
   pubmed           : 
-  googlescholar    : # "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
-  email            : "mingsheng.cai@ed.ac.uk"
+  googlescholar    : "https://scholar.google.com/citations?user=4uS4-8EAAAAJ"
+  email            : "mingsheng.cai23@alumni.imperial.ac.uk"
   researchgate     : # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

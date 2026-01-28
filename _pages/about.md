@@ -17,9 +17,11 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently a PhD student at The University of Edinburgh supervised by [Dr. Adriana Sejfia](https://www.linkedin.com/in/adriana-sejfia/) and [Dr. Amir Shaikhha](https://www.linkedin.com/in/amir-shaikhha-44985841/).
+<!-- I am currently a PhD student at The University of Edinburgh supervised by [Dr. Adriana Sejfia](https://www.linkedin.com/in/adriana-sejfia/) and [Dr. Amir Shaikhha](https://www.linkedin.com/in/amir-shaikhha-44985841/). -->
 
-I received my Master’s degree from Imperial College London, where I was supervised by [Dr. Che Liu](https://www.linkedin.com/in/che-liu-32abcs7b1/) and [Dr. Rossella Arcucci](https://www.linkedin.com/in/rossella-arcucci-723a2b65/). Prior to that, I obtained my Bachelor’s degree from Beihang University, under the supervision of [Dr. Yuan Yuan](https://scse.buaa.edu.cn/info/1387/10369.htm).
+I received my Master’s degree from Imperial College London, where I was supervised by [Dr. Che Liu](https://www.linkedin.com/in/che-liu-32abcs7b1/) and [Dr. Rossella Arcucci](https://www.linkedin.com/in/rossella-arcucci-723a2b65/). 
+
+Prior to that, I obtained my Bachelor’s degree from Beihang University, under the supervision of [Dr. Yuan Yuan](https://scse.buaa.edu.cn/info/1387/10369.htm).
 
 <!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
@@ -28,7 +30,7 @@ I received my Master’s degree from Imperial College London, where I was superv
 - 🎉 *Aug 2025*: One paper was accepted to <img src="images/acl-logo.svg" width="20"/> EMNLP 2025.
 - 🏆 Jul 2025: Thrilled to receive the Best Paper Award at the FMSD workshop at <img src="images/icml-logo.svg" width="20"/> ICML 2025.
 - 🎉 *Jun 2025*: One paper was accepted as a spotlight presentation at the FMSD workshop at <img src="images/icml-logo.svg" width="20"/> ICML 2025.
-- 📰 *Nov 2024*: I started my Doctor's degree in Informatics at The University of Edinburgh supervised by Dr. Adriana Sejfia and Dr. Amir Shaikhha.
+<!-- - 📰 *Nov 2024*: I started my Doctor's degree in Informatics at The University of Edinburgh supervised by Dr. Adriana Sejfia and Dr. Amir Shaikhha. -->
 - 🎉 *Sep 2024*: I graduated with Distinction from Imperial College London.
 - 📰 *May 2024*: Glad to start my capstone project in <img src="images/dsi-logo.svg" width="20"/> [Imperial Data Science Institute](https://www.imperial.ac.uk/data-science/) supervised by Dr. Che Liu and Dr. Rossella Arcucci.
 - 📰 *Sep 2023*: I started my Master's degree in Computational Science and Engineering at Imperial College London.
@@ -72,12 +74,13 @@ I received my Master’s degree from Imperial College London, where I was superv
 # 🎖 Honors and Awards
 - *Jul 2025*, Best Paper Award, 1st ICML Workshop on Foundation Models for Structured Data.
 - *Jun 2023*, Distinguished Graduate, Beihang University.
+- *Dec 2022*, Merit Student, Beijing Municipal Education Commission.
 - *Oct 2022*, Future Star Scholarship, Ministry of Education of the People's Republic of China.
 - *Oct 2022*, Huawei Scholarship.
 - *Aug 2022*, Third Prize, The 8th China International "Internet+" College Students’ Innovation and Entrepreneurship Competition.
 
 # 📖 Educations
-- *Nov 2024 - Apr 2028*, Doctor, <img src="images/inf-logo.svg" width="21"/> [School of Informatics](https://informatics.ed.ac.uk/), <img src="images/uoe-logo.svg" width="21"/> [The University of Edinburgh](https://www.ed.ac.uk/), Edinburgh, United Kingdom.
+<!-- - *Nov 2024 - Apr 2028*, Doctor, <img src="images/inf-logo.svg" width="21"/> [School of Informatics](https://informatics.ed.ac.uk/), <img src="images/uoe-logo.svg" width="21"/> [The University of Edinburgh](https://www.ed.ac.uk/), Edinburgh, United Kingdom. -->
 - *Sep 2023 - Sep 2024*, Master, <img src="images/ala-logo.svg" width="19"/> [Ada Lovelace Academy](https://www.imperial.ac.uk/ada-lovelace-academy/), <img src="images/icl-logo.svg" width="19"/> [Imperial College London](https://www.imperial.ac.uk/), London, United Kingdom.
 - *Sep 2019 - Jun 2023*, Bachelor, <img src="images/scse-logo.svg" width="25"/> [School of Computer Science and Engineering](https://scse.buaa.edu.cn/English/Home.htm), <img src="images/buaa-logo.svg" width="21"/> [Beihang University](https://ev.buaa.edu.cn/), Beijing, China.
 - *Sep 2016 - Jun 2019*, High School Diploma, <img src="images/no1-high-logo.svg" width="22"/> [Changzhou No.1 High School](http://www.yz.czedu.cn/), Changzhou, China.
@@ -87,7 +90,7 @@ I received my Master’s degree from Imperial College London, where I was superv
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 # 🧑‍🏫 Teaching and Service
-- *Sep 2025 - Jan 2026*, Teaching Assistant, INFR08032 - Software Engineering and Professional Practice, The University of Edinburgh, Edinburgh, United Kingdom.
+- *Sep 2025 - Jan 2026*, Tutor & Marker, INFR08032 - Software Engineering and Professional Practice, University of Edinburgh, Edinburgh, United Kingdom.
 - *Feb 2022 - Jun 2022*, Teaching Assistant, B1B061060 - Discrete Mathematics, Beihang University, Beijing, China.
 
 
