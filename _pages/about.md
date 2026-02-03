@@ -45,7 +45,7 @@ Prior to that, I obtained my Bachelor’s degree from Beihang University, under 
 
 **Mingsheng Cai**, Jiuming Jiang, Wenhao Huang, Che Liu, Rossella Arcucci
 
-[**Code**](https://github.com/mingscai/SuPreME) | [**Data**](https://huggingface.co/datasets/mingscai/SuPreME) | [**Model**](https://huggingface.co/mingscai/SuPreME)<strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Code**](https://github.com/mingscai/SuPreME) | [**Data**](https://huggingface.co/datasets/mingscai/SuPreME) | [**Model**](https://huggingface.co/mingscai/SuPreME)<strong><span class='show_paper_citations' data='4uS4-8EAAAAJ:u-x6o8ySG0sC'></span></strong>
 - Automated annotation of MIMIC-IV-ECG dataset with LLMs and medical DBs.
 
 - Entity-level alignment of ECG signals via pre-training the SuPreME framework.
@@ -203,24 +203,24 @@ Prior to that, I obtained my Bachelor’s degree from Beihang University, under 
 <script>
 // Store all photo paths
 const allPhotos = [
-  'images/photos/DSCF0157.JPG',
-  'images/photos/DSCF0369.JPG',
-  'images/photos/DSCF0480.JPG',
-  'images/photos/DSCF1198.JPG',
-  'images/photos/DSCF1242.JPG',
-  'images/photos/DSCF1275.JPG',
-  'images/photos/DSCF1298.JPG',
-  'images/photos/DSCF1717.JPG',
-  'images/photos/DSCF1778.JPG',
-  'images/photos/DSCF1788.JPG',
-  'images/photos/DSCF2840.JPG',
-  'images/photos/DSCF2913.JPG',
-  'images/photos/DSCF1709.JPG',
-  'images/photos/DSCF1730.JPG',
-  'images/photos/IMG_0577.JPG',
-  'images/photos/IMG_1164.JPG',
-  'images/photos/IMG_1183.JPG',
-  'images/photos/IMG_1344.JPG'
+  'images/photos/DSCF0157.jpg',
+  'images/photos/DSCF0369.jpg',
+  'images/photos/DSCF0480.jpg',
+  'images/photos/DSCF1198.jpg',
+  'images/photos/DSCF1242.jpg',
+  'images/photos/DSCF1275.jpg',
+  'images/photos/DSCF1298.jpg',
+  'images/photos/DSCF1717.jpg',
+  'images/photos/DSCF1778.jpg',
+  'images/photos/DSCF1788.jpg',
+  'images/photos/DSCF2840.jpg',
+  'images/photos/DSCF2913.jpg',
+  'images/photos/DSCF1709.jpg',
+  'images/photos/DSCF1730.jpg',
+  'images/photos/IMG_0577.jpg',
+  'images/photos/IMG_1164.jpg',
+  'images/photos/IMG_1183.jpg',
+  'images/photos/IMG_1344.jpg'
 ];
 
 let showingAll = false;
