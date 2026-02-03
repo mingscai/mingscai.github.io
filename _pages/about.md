@@ -215,12 +215,12 @@ const allPhotos = [
   'images/photos/DSCF1788.JPG',
   'images/photos/DSCF2840.JPG',
   'images/photos/DSCF2913.JPG',
-  'images/photos/DSCF1709.jpg',
-  'images/photos/DSCF1730.jpg',
-  'images/photos/IMG_0577.jpeg',
-  'images/photos/IMG_1164.jpeg',
-  'images/photos/IMG_1183.jpeg',
-  'images/photos/IMG_1344.jpeg'
+  'images/photos/DSCF1709.JPG',
+  'images/photos/DSCF1730.JPG',
+  'images/photos/IMG_0577.JPG',
+  'images/photos/IMG_1164.JPG',
+  'images/photos/IMG_1183.JPG',
+  'images/photos/IMG_1344.JPG'
 ];
 
 let showingAll = false;
