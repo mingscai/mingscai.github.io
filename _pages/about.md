@@ -135,6 +135,7 @@ My research interests lie in **AI for Software Engineering (AI4SE)** and **Softw
 
 
 # 💻 Employment
+- *May 2024 - Feb 2025*, Research Intern, <img src="images/logos/dsi-logo.svg" width="20"/> [Imperial Data Science Institute](https://www.imperial.ac.uk/data-science/), London, UK.
 - *Feb 2023 - Apr 2023*, Intern, <img src="images/logos/lenovo-logo.svg" width="20"/> [Lenovo](https://www.lenovo.com/), Beijing, China.
 - *Oct 2022 - Jun 2023*, Research Intern, <img src="images/logos/scse-logo.svg" width="22"/> [Advanced Computer Technology Institute, BUAA](http://www.act.buaa.edu.cn/), Beijing, China.
 - *JuL 2022 - Aug 2022*, Intern, <img src="images/logos/huawei-logo.svg" width="19"/> [Huawei](https://www.huawei.com/), Beijing, China.
