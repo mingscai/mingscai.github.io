@@ -24,11 +24,12 @@ author:
   name             : "Mingsheng Cai"
   avatar           : "images/favicons/android-chrome-512x512.png"
   bio              : "/ˈmɪŋ-ʃɛŋ tsaɪ/"
-  location         : "United Kingdom" # "Edinburgh, UK"
-  employer         : # "University of Edinburgh"
+  location         : "Edinburgh, UK"
+  employer         : "University of Edinburgh"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=4uS4-8EAAAAJ"
-  email            : "mingsheng.cai23@alumni.imperial.ac.uk"
+  cv               : "https://drive.google.com/file/d/1Xj5HFcaqE2fSLAjjFz_h_YPZNv2X8ecC/view?usp=drive_link" # e.g., "/files/cv.pdf" or full URL
+  email            : "mingsheng.cai@ed.ac.uk"
   researchgate     : # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

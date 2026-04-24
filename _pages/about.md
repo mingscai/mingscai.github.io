@@ -17,24 +17,62 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-<!-- I am currently a PhD student at The University of Edinburgh supervised by [Dr. Adriana Sejfia](https://www.linkedin.com/in/adriana-sejfia/) and [Dr. Amir Shaikhha](https://www.linkedin.com/in/amir-shaikhha-44985841/). -->
+I am currently a PhD student at The University of Edinburgh supervised by [Dr. Adriana Sejfia](https://www.linkedin.com/in/adriana-sejfia/) and [Dr. Amir Shaikhha](https://www.linkedin.com/in/amir-shaikhha-44985841/). I received my Master’s degree from Imperial College London, where I was supervised by [Dr. Che Liu](https://www.linkedin.com/in/che-liu-32abcs7b1/) and [Dr. Rossella Arcucci](https://www.linkedin.com/in/rossella-arcucci-723a2b65/). Prior to that, I obtained my Bachelor’s degree from Beihang University, under the supervision of [Dr. Yuan Yuan](https://scse.buaa.edu.cn/info/1387/10369.htm).
 
-I received my Master’s degree from Imperial College London, where I was supervised by [Dr. Che Liu](https://www.linkedin.com/in/che-liu-32abcs7b1/) and [Dr. Rossella Arcucci](https://www.linkedin.com/in/rossella-arcucci-723a2b65/). 
-
-Prior to that, I obtained my Bachelor’s degree from Beihang University, under the supervision of [Dr. Yuan Yuan](https://scse.buaa.edu.cn/info/1387/10369.htm).
-
-<!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
-
+My research interests lie in **AI for Software Engineering (AI4SE)** and **Software Security**, with a broader goal of leveraging large language models to automate the localization and analysis of security vulnerabilities, as well as advancing the scalability and trustworthiness of LLM-based code reasoning.
 
 # 🔥 News
+
+<div id="news-container" style="position: relative; overflow: hidden; max-height: 175px; transition: max-height 0.5s ease;">
+<div id="news-list" markdown="1">
+- 📰 *Feb 2026*: Glad to present our ECG medical foundation model at the Edinburgh Future Institiute.
 - 🎉 *Aug 2025*: One paper was accepted to <img src="images/logos/acl-logo.svg" width="20"/> EMNLP 2025.
 - 🏆 Jul 2025: Thrilled to receive the Best Paper Award at the FMSD workshop at <img src="images/logos/icml-logo.svg" width="20"/> ICML 2025.
 - 🎉 *Jun 2025*: One paper was accepted as a spotlight presentation at the FMSD workshop at <img src="images/logos/icml-logo.svg" width="20"/> ICML 2025.
-<!-- - 📰 *Nov 2024*: I started my Doctor's degree in Informatics at The University of Edinburgh supervised by Dr. Adriana Sejfia and Dr. Amir Shaikhha. -->
+- 📣 *Nov 2024*: I started my Doctor's degree in Informatics at The University of Edinburgh supervised by Dr. Adriana Sejfia and Dr. Amir Shaikhha.
 - 🎉 *Sep 2024*: I graduated with Distinction from Imperial College London.
 - 📰 *May 2024*: Glad to start my capstone project in <img src="images/logos/dsi-logo.svg" width="20"/> [Imperial Data Science Institute](https://www.imperial.ac.uk/data-science/) supervised by Dr. Che Liu and Dr. Rossella Arcucci.
-- 📰 *Sep 2023*: I started my Master's degree in Computational Science and Engineering at Imperial College London.
+- 📣 *Sep 2023*: I started my Master's degree in Computational Science and Engineering at Imperial College London.
 - 🎉 *Jun 2023*: I graduated from Beihang University as one of the Distinguished Graduates.
+</div>
+<div id="news-fade-overlay" style="position: absolute; bottom: 0; left: 0; right: 0; height: 50px; background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,1) 100%); pointer-events: none; transition: opacity 0.3s ease;"></div>
+</div>
+
+<div style="text-align: center; margin-top: 10px;">
+  <button id="toggle-news-btn" onclick="toggleAllNews()" style="padding: 10px 20px; background: none; color: #666; border: none; cursor: pointer; font-size: 1.1em; font-weight: 500; transition: all 0.3s ease;">
+    Show All ›
+  </button>
+</div>
+
+<script>
+(function() {
+  var showingAllNews = false;
+
+  window.toggleAllNews = function() {
+    var container = document.getElementById('news-container');
+    var fadeOverlay = document.getElementById('news-fade-overlay');
+    var btn = document.getElementById('toggle-news-btn');
+
+    showingAllNews = !showingAllNews;
+
+    if (showingAllNews) {
+      container.style.maxHeight = 'none';
+      fadeOverlay.style.opacity = '0';
+      btn.innerHTML = 'Show Less ‹';
+    } else {
+      container.style.maxHeight = '175px';
+      fadeOverlay.style.opacity = '1';
+      btn.innerHTML = 'Show All ›';
+    }
+  };
+
+  var btn = document.getElementById('toggle-news-btn');
+  if (btn) {
+    btn.onmouseover = function() { this.style.color = '#333'; };
+    btn.onmouseout = function() { this.style.color = '#666'; };
+  }
+})();
+</script>
 
 # 📝 Publications 
 
@@ -45,7 +83,7 @@ Prior to that, I obtained my Bachelor’s degree from Beihang University, under 
 
 **Mingsheng Cai**, Jiuming Jiang, Wenhao Huang, Che Liu, Rossella Arcucci
 
-[**Code**](https://github.com/mingscai/SuPreME) | [**Data**](https://huggingface.co/datasets/mingscai/SuPreME) | [**Model**](https://huggingface.co/mingscai/SuPreME)<strong><span class='show_paper_citations' data='4uS4-8EAAAAJ:u-x6o8ySG0sC'></span></strong>
+[**Code**](https://github.com/mingscai/SuPreME) | [**Data**](https://huggingface.co/datasets/mingscai/SuPreME) | [**Model**](https://huggingface.co/mingscai/SuPreME)
 - Automated annotation of MIMIC-IV-ECG dataset with LLMs and medical DBs.
 
 - Entity-level alignment of ECG signals via pre-training the SuPreME framework.
@@ -80,18 +118,20 @@ Prior to that, I obtained my Bachelor’s degree from Beihang University, under 
 - *Aug 2022*, Third Prize, The 8th China International "Internet+" College Students’ Innovation and Entrepreneurship Competition.
 
 # 📖 Educations
-<!-- - *Nov 2024 - Apr 2028*, Doctor, <img src="images/logos/inf-logo.svg" width="21"/> [School of Informatics](https://informatics.ed.ac.uk/), <img src="images/logos/uoe-logo.svg" width="21"/> [The University of Edinburgh](https://www.ed.ac.uk/), Edinburgh, United Kingdom. -->
+- *Nov 2024 - Apr 2028*, Doctor, <img src="images/logos/inf-logo.svg" width="21"/> [School of Informatics](https://informatics.ed.ac.uk/), <img src="images/logos/uoe-logo.svg" width="21"/> [The University of Edinburgh](https://www.ed.ac.uk/), Edinburgh, United Kingdom.
 - *Sep 2023 - Sep 2024*, Master, <img src="images/logos/ala-logo.svg" width="19"/> [Ada Lovelace Academy](https://www.imperial.ac.uk/ada-lovelace-academy/), <img src="images/logos/icl-logo.svg" width="19"/> [Imperial College London](https://www.imperial.ac.uk/), London, United Kingdom.
 - *Sep 2019 - Jun 2023*, Bachelor, <img src="images/logos/scse-logo.svg" width="25"/> [School of Computer Science and Engineering](https://scse.buaa.edu.cn/English/Home.htm), <img src="images/logos/buaa-logo.svg" width="21"/> [Beihang University](https://ev.buaa.edu.cn/), Beijing, China.
 - *Sep 2016 - Jun 2019*, High School Diploma, <img src="images/logos/no1-high-logo.svg" width="22"/> [Changzhou No.1 High School](http://www.yz.czedu.cn/), Changzhou, China.
 
-<!-- # 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
+# 💬 Invited Talks
+- *Jul 2025*, Towards Robust Multimodal ECG Understanding with LLMs, 1st ICML Workshop on Foundation Models for Structured Data. 
 
-# 🧑‍🏫 Teaching and Service
+# 🧑‍🏫 Teaching
 - *Sep 2025 - Jan 2026*, Tutor & Marker, INFR08032 - Software Engineering and Professional Practice, University of Edinburgh, Edinburgh, United Kingdom.
 - *Feb 2022 - Jun 2022*, Teaching Assistant, B1B061060 - Discrete Mathematics, Beihang University, Beijing, China.
+
+# 🛎️ Service
+- *May 2026*, Reviewer, ICML Workshop on Foundation Models for Structured Data.
 
 
 # 💻 Employment
