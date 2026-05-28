@@ -76,6 +76,22 @@ My research interests lie in **AI for Software Engineering (AI4SE)** and **Softw
 
 # 📝 Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/projects/feasigen.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Do Agents Know What They Can't Do? Evaluating Feasibility Awareness in Tool-Using Agents](https://arxiv.org/abs/2605.28532)
+
+Liang Cheng, **Mingsheng Cai**, Jiuming Jiang, Luo Mai
+
+[**Code**](https://github.com/LeonChengg/FeasiGen)
+- FeasiGen: an automatic pipeline that builds infeasible agent tasks by masking the critical tools shared across successful execution traces.
+
+- Feasibility-aware metrics (e.g. False Continue Rate) measuring whether agents recognize infeasible tasks and stop early.
+
+- Across four datasets and nine LLMs, infeasibility detection is weak (False Continue Rate up to 73.9%), and multi-agent architectures clearly help.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2025</div><img src='images/projects/supreme.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
