@@ -269,6 +269,7 @@ const allPhotos = [
   'images/photos/DSCF1242.jpg',
   'images/photos/DSCF1275.jpg',
   'images/photos/DSCF1298.jpg',
+  'images/photos/DSCF1307.jpg',
   'images/photos/DSCF1717.jpg',
   'images/photos/DSCF1778.jpg',
   'images/photos/DSCF1788.jpg',
