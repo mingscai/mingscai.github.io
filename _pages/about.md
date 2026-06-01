@@ -263,7 +263,9 @@ const allPhotos = [
   'images/photos/DSCF0157.jpg',
   'images/photos/DSCF0369.jpg',
   'images/photos/DSCF0480.jpg',
+  'images/photos/DSCF1163.jpg',
   'images/photos/DSCF1198.jpg',
+  'images/photos/DSCF1238.jpg',
   'images/photos/DSCF1242.jpg',
   'images/photos/DSCF1275.jpg',
   'images/photos/DSCF1298.jpg',
@@ -282,6 +284,9 @@ const allPhotos = [
 
 let showingAll = false;
 
+// Panoramic photos (aspect ratio >= this) break out to span the full width
+const WIDE_ASPECT_RATIO = 2.0;
+
 // Fisher-Yates shuffle algorithm
 function shuffleArray(array) {
   const shuffled = [...array];
@@ -292,27 +297,47 @@ function shuffleArray(array) {
   return shuffled;
 }
 
+// Probe an image's aspect ratio before rendering
+function probeAspectRatio(src) {
+  return new Promise((resolve) => {
+    const probe = new Image();
+    probe.onload = function() { resolve(this.naturalWidth / this.naturalHeight); };
+    probe.onerror = function() { resolve(1); };
+    probe.src = src;
+  });
+}
+
+// Create one gallery tile
+function createPhotoTile(photo, isWide) {
+  const photoDiv = document.createElement('div');
+  photoDiv.className = isWide ? 'photo-item wide' : 'photo-item';
+  photoDiv.style.cssText = 'break-inside: avoid; margin-bottom: 15px; position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); cursor: pointer; transition: opacity 0.3s ease;';
+
+  photoDiv.onclick = function() { openImageModal(this); };
+
+  const img = document.createElement('img');
+  img.src = photo;
+  img.alt = 'Photography';
+  img.style.cssText = 'width: 100%; display: block; transition: transform 0.3s;';
+  img.onmouseover = function() { this.style.transform = 'scale(1.05)'; };
+  img.onmouseout = function() { this.style.transform = 'scale(1)'; };
+
+  photoDiv.appendChild(img);
+  return photoDiv;
+}
+
 // Initialize and render photos
 function initPhotos() {
   const gallery = document.getElementById('photo-gallery');
-  const shuffledPhotos = shuffleArray(allPhotos);
 
-  shuffledPhotos.forEach((photo) => {
-    const photoDiv = document.createElement('div');
-    photoDiv.className = 'photo-item';
-    photoDiv.style.cssText = 'break-inside: avoid; margin-bottom: 15px; position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); cursor: pointer; transition: opacity 0.3s ease;';
+  // Probe aspect ratios first so panoramic photos can be pinned to the top
+  // (in their original order), while the rest are shuffled.
+  Promise.all(allPhotos.map(probeAspectRatio)).then((ratios) => {
+    const widePhotos = allPhotos.filter((_, i) => ratios[i] >= WIDE_ASPECT_RATIO);
+    const otherPhotos = shuffleArray(allPhotos.filter((_, i) => ratios[i] < WIDE_ASPECT_RATIO));
 
-    photoDiv.onclick = function() { openImageModal(this); };
-
-    const img = document.createElement('img');
-    img.src = photo;
-    img.alt = 'Photography';
-    img.style.cssText = 'width: 100%; display: block; transition: transform 0.3s;';
-    img.onmouseover = function() { this.style.transform = 'scale(1.05)'; };
-    img.onmouseout = function() { this.style.transform = 'scale(1)'; };
-
-    photoDiv.appendChild(img);
-    gallery.appendChild(photoDiv);
+    widePhotos.forEach((photo) => gallery.appendChild(createPhotoTile(photo, true)));
+    otherPhotos.forEach((photo) => gallery.appendChild(createPhotoTile(photo, false)));
   });
 
   // Add button hover effects
@@ -355,6 +380,11 @@ if (document.readyState === 'loading') {
 </details>
 
 <style>
+/* Panoramic photos break out of the masonry to span the full width */
+#photo-gallery .photo-item.wide {
+  column-span: all;
+}
+
 /* Pinterest-style masonry layout - responsive */
 @media (max-width: 768px) {
   #photo-gallery {
