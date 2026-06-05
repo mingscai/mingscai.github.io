@@ -81,14 +81,30 @@ My research interests lie in **AI for Software Engineering (AI4SE)** and **Softw
 
 [Do Agents Know What They Can't Do? Evaluating Feasibility Awareness in Tool-Using Agents](https://arxiv.org/abs/2605.28532)
 
-Liang Cheng, **Mingsheng Cai**, Jiuming Jiang, Luo Mai
+Liang Cheng<sup>*</sup>, **Mingsheng Cai**<sup>*</sup>, Jiuming Jiang, Luo Mai
 
-[**Code**](https://github.com/LeonChengg/FeasiGen)
+[**Code**](https://github.com/LeonChengg/FeasiGen) | [**Data**](#)
 - FeasiGen: an automatic pipeline that builds infeasible agent tasks by masking the critical tools shared across successful execution traces.
 
 - Feasibility-aware metrics (e.g. False Continue Rate) measuring whether agents recognize infeasible tasks and stop early.
 
 - Across four datasets and nine LLMs, infeasibility detection is weak (False Continue Rate up to 73.9%), and multi-agent architectures clearly help.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[An Empirical Study of Third-Party Reports and Vulnerability Localization](#)
+
+**Mingsheng Cai**, Joanna C. S. Santos, Adriana Sejfia
+
+[**Code**](#) | [**Data**](#)
+- PrismVul: a curated benchmark of 1,440 Chromium vulnerabilities for function- and file-level localization, scrubbed of noise and post-fix leakage.
+
+- Feasibility study on localizing vulnerabilities from a third-party report, which says how a flaw manifests rather than where it lives.
+
+- Benchmarks statistical, ML, retrieval, and agentic methods on Recall@10 and MAP; LLM agent + ICL proves most viable (Recall@10 63.51%, MAP 49.86%).
 </div>
 </div>
 
