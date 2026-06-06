@@ -56,12 +56,12 @@ $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 $lighter-gray               : mix(#fff, $gray, 90%);
 
-$body-color                 : #fff;
-$background-color           : #fff;
+$body-color                 : #faf9f6; // Linen
+$background-color           : #faf9f6; // Linen
 $code-background-color      : #fafafa;
 $code-background-color-dark : $light-gray;
-$text-color                 : $dark-gray;
-$border-color               : $lighter-gray;
+$text-color                 : #141413; // Obsidian
+$border-color               : #d1cfc6;
 
 $primary-color              : #7a8288;
 $success-color              : #62c462;
@@ -94,11 +94,11 @@ $xing-color                 : #006567;
 
 
 /* links */
-$link-color                 : $info-color;
-$link-color-hover           : mix(#000, $link-color, 25%);
-$link-color-visited         : mix(#fff, $link-color, 25%);
-$masthead-link-color        : $primary-color;
-$masthead-link-color-hover  : mix(#000, $primary-color, 25%);
+$link-color                 : #141413; // Obsidian (no blue)
+$link-color-hover           : #5e5d5a; // Graphite on hover
+$link-color-visited         : #141413; // Obsidian
+$masthead-link-color        : #5e5d5a; // Graphite
+$masthead-link-color-hover  : mix(#000, #5e5d5a, 25%);
 
 
 /*

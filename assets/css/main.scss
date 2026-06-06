@@ -46,7 +46,7 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    border-bottom: 1px #efefef solid;
+    border-bottom: 1px #d1cfc6 solid;
     padding: 2em 0 2em 0;
     
 
@@ -74,7 +74,7 @@
             max-width: 40%;
             order: 1;
         }
-        
+
         .paper-box-text{
             justify-content: left;
             padding-left: 2em;
@@ -85,6 +85,27 @@
     }
 
 
+}
+
+// Drop the divider when a paper-box is the last one before a section
+// or subsection heading (h1/h2), so groups don't end with a stray line.
+.paper-box:has(+ h1),
+.paper-box:has(+ h2) {
+    border-bottom: none;
+}
+
+// Tighten the gap between a sub-heading and the paper-box right below it.
+h2 + .paper-box {
+    padding-top: 1em;
+}
+
+// And the gap between a paper-box and a sub-heading right below it.
+.paper-box:has(+ h2) {
+    padding-bottom: 1em;
+}
+
+.paper-box + h2 {
+    margin-top: 0.5em;
 }
 
 $scroll_offset : 2em;
@@ -104,10 +125,39 @@ h1:before, .anchor:before {
     margin-top: .5em;
     margin-left: -.5em;
     color: white;
-    background-color: #00369f;
+    // Defaults to blue; override per-badge via --badge-color or a preset class.
+    background-color: var(--badge-color, #00369f);
     font-size: .8em;
 }
 
+// Optional preset colors: add one of these classes alongside .badge.
+.badge--green  { --badge-color: #2e7d32; }
+.badge--red    { --badge-color: #c0392b; }
+.badge--gold   { --badge-color: #b8860b; }
+.badge--purple { --badge-color: #6a1b9a; }
+.badge--teal   { --badge-color: #00897b; }
+.badge--gray   { --badge-color: #555;    }
+.badge--terracotta { --badge-color: #cc7c5e; }
+.badge--sage       { --badge-color: #c0d1c1; }
+.badge--olive      { --badge-color: #7c8c62; }
+.badge--cornflower { --badge-color: #759ac8; }
+.badge--lavender   { --badge-color: #cbcada; }
+.badge--mauve      { --badge-color: #b86b86; }
+
+// Badges are absolutely positioned, so each extra one needs a larger
+// top offset (≈1.7em per badge) to stack instead of overlap.
 .badge + .badge {
     margin-top: 2.2em;
+}
+
+.badge + .badge + .badge {
+    margin-top: 3.9em;
+}
+
+.badge + .badge + .badge + .badge {
+    margin-top: 5.6em;
+}
+
+.badge + .badge + .badge + .badge + .badge {
+    margin-top: 7.3em;
 }

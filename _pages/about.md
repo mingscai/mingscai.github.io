@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently a PhD student at The University of Edinburgh supervised by [Dr. Adriana Sejfia](https://www.linkedin.com/in/adriana-sejfia/) and [Dr. Amir Shaikhha](https://www.linkedin.com/in/amir-shaikhha-44985841/). I received my Master’s degree from Imperial College London, where I was supervised by [Dr. Che Liu](https://www.linkedin.com/in/che-liu-32abcs7b1/) and [Dr. Rossella Arcucci](https://www.linkedin.com/in/rossella-arcucci-723a2b65/). Prior to that, I obtained my Bachelor’s degree from Beihang University, under the supervision of [Dr. Yuan Yuan](https://scse.buaa.edu.cn/info/1387/10369.htm).
+I am currently a PhD student at The University of Edinburgh supervised by [Dr. Adriana Sejfia](https://scholar.google.com/citations?user=l4fa4fwAAAAJ) and [Dr. Amir Shaikhha](https://scholar.google.com/citations?user=97wlbikAAAAJ). I received my Master’s degree from Imperial College London, where I was supervised by [Dr. Che Liu](https://scholar.google.com/citations?user=HED_458AAAAJ) and [Dr. Rossella Arcucci](https://scholar.google.com/citations?user=oxy2ZQoAAAAJ). Prior to that, I obtained my Bachelor’s degree from Beihang University, under the supervision of [Dr. Yuan Yuan](https://scholar.google.com/citations?user=ygShHQUAAAAJ).
 
 My research interests lie in **AI for Software Engineering (AI4SE)** and **Software Security**, with a broader goal of leveraging large language models to automate the localization and analysis of security vulnerabilities, as well as advancing the scalability and trustworthiness of LLM-based code reasoning.
 
@@ -35,11 +35,11 @@ My research interests lie in **AI for Software Engineering (AI4SE)** and **Softw
 - 📣 *Sep 2023*: I started my Master's degree in Computational Science and Engineering at Imperial College London.
 - 🎉 *Jun 2023*: I graduated from Beihang University as one of the Distinguished Graduates.
 </div>
-<div id="news-fade-overlay" style="position: absolute; bottom: 0; left: 0; right: 0; height: 50px; background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,1) 100%); pointer-events: none; transition: opacity 0.3s ease;"></div>
+<div id="news-fade-overlay" style="position: absolute; bottom: 0; left: 0; right: 0; height: 50px; background: linear-gradient(to bottom, rgba(250,249,246,0) 0%, rgba(250,249,246,0.8) 50%, rgba(250,249,246,1) 100%); pointer-events: none; transition: opacity 0.3s ease;"></div>
 </div>
 
-<div style="text-align: center; margin-top: 10px;">
-  <button id="toggle-news-btn" onclick="toggleAllNews()" style="padding: 10px 20px; background: none; color: #666; border: none; cursor: pointer; font-size: 1.1em; font-weight: 500; transition: all 0.3s ease;">
+<div style="text-align: center; margin-top: 0px; margin-bottom: -20px;">
+  <button id="toggle-news-btn" onclick="toggleAllNews()" style="padding: 10px 20px; background: none; color: #5e5d5a; border: none; cursor: pointer; font-size: 1.1em; font-weight: 500; transition: all 0.3s ease;">
     Show All ›
   </button>
 </div>
@@ -68,22 +68,24 @@ My research interests lie in **AI for Software Engineering (AI4SE)** and **Softw
 
   var btn = document.getElementById('toggle-news-btn');
   if (btn) {
-    btn.onmouseover = function() { this.style.color = '#333'; };
-    btn.onmouseout = function() { this.style.color = '#666'; };
+    btn.onmouseover = function() { this.style.color = '#141413'; };
+    btn.onmouseout = function() { this.style.color = '#5e5d5a'; };
   }
 })();
 </script>
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/projects/feasigen.png' alt="sym" width="100%"></div></div>
+## 🤖 Trustworthy LLMs
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--cornflower">Under Review</div><img src='images/projects/feasigen.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Do Agents Know What They Can't Do? Evaluating Feasibility Awareness in Tool-Using Agents](https://arxiv.org/abs/2605.28532)
 
 Liang Cheng<sup>*</sup>, **Mingsheng Cai**<sup>*</sup>, Jiuming Jiang, Luo Mai
 
-[**Code**](https://github.com/LeonChengg/FeasiGen) | [**Data**](#)
+[Code](https://github.com/LeonChengg/FeasiGen) | [Data](#)
 - FeasiGen: an automatic pipeline that builds infeasible agent tasks by masking the critical tools shared across successful execution traces.
 
 - Feasibility-aware metrics (e.g. False Continue Rate) measuring whether agents recognize infeasible tasks and stop early.
@@ -92,14 +94,16 @@ Liang Cheng<sup>*</sup>, **Mingsheng Cai**<sup>*</sup>, Jiuming Jiang, Luo Mai
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+## 🔒 Software Security
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--cornflower">Under Review</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [An Empirical Study of Third-Party Reports and Vulnerability Localization](#)
 
 **Mingsheng Cai**, Joanna C. S. Santos, Adriana Sejfia
 
-[**Code**](#) | [**Data**](#)
+[Code](#) | [Data](#)
 - PrismVul: a curated benchmark of 1,440 Chromium vulnerabilities for function- and file-level localization, scrubbed of noise and post-fix leakage.
 
 - Feasibility study on localizing vulnerabilities from a third-party report, which says how a flaw manifests rather than where it lives.
@@ -108,14 +112,16 @@ Liang Cheng<sup>*</sup>, **Mingsheng Cai**<sup>*</sup>, Jiuming Jiang, Luo Mai
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2025</div><img src='images/projects/supreme.png' alt="sym" width="100%"></div></div>
+## 🩺 AI for Healthcare
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--terracotta">EMNLP 2025</div><img src='images/projects/supreme.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [SuPreME: A Supervised Pre-training Framework for Multimodal ECG Representation Learning](https://aclanthology.org/2025.findings-emnlp.633/)
 
 **Mingsheng Cai**, Jiuming Jiang, Wenhao Huang, Che Liu, Rossella Arcucci
 
-[**Code**](https://github.com/mingscai/SuPreME) | [**Data**](https://huggingface.co/datasets/mingscai/SuPreME) | [**Model**](https://huggingface.co/mingscai/SuPreME)
+[Code](https://github.com/mingscai/SuPreME) | [Data](https://huggingface.co/datasets/mingscai/SuPreME) | [Model](https://huggingface.co/mingscai/SuPreME)
 - Automated annotation of MIMIC-IV-ECG dataset with LLMs and medical DBs.
 
 - Entity-level alignment of ECG signals via pre-training the SuPreME framework.
@@ -124,7 +130,7 @@ Liang Cheng<sup>*</sup>, **Mingsheng Cai**<sup>*</sup>, Jiuming Jiang, Luo Mai
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">FMSD @ ICML 2025</div><div class="badge">Spotlight & Best Paper Award</div><img src='images/projects/llm4ecg.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--terracotta">FMSD @ ICML 2025</div><div class="badge badge--mauve">Best Paper Award</div><div class="badge badge--olive">Spotlight</div><img src='images/projects/llm4ecg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Towards Generalizable Multimodal ECG Representation Learning with LLM-extracted Clinical Entities](https://openreview.net/forum?id=bcG1W2T0Xx)
@@ -141,19 +147,30 @@ Liang Cheng<sup>*</sup>, **Mingsheng Cai**<sup>*</sup>, Jiuming Jiang, Luo Mai
 
 <!-- - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
-# 🎖 Honors and Awards
+# 🎖 Awards and Honors
 - *Jul 2025*, Best Paper Award, 1st ICML Workshop on Foundation Models for Structured Data.
 - *Jun 2023*, Distinguished Graduate, Beihang University.
 - *Dec 2022*, Merit Student, Beijing Municipal Education Commission.
-- *Oct 2022*, Future Star Scholarship, Ministry of Education of the People's Republic of China.
-- *Oct 2022*, Huawei Scholarship.
 - *Aug 2022*, Third Prize, The 8th China International "Internet+" College Students’ Innovation and Entrepreneurship Competition.
 
-# 📖 Educations
+# 💰 Funding
+- *Oct 2025*, IGS PGR Travel Fund, University of Edinburgh.
+- *Oct 2024*, School of Informatics Scholarship, University of Edinburgh.
+- *Oct 2022*, Future Star Scholarship, Ministry of Education of the People's Republic of China.
+- *Oct 2022*, Huawei Scholarship, Huawei.
+
+# 📖 Education
 - *Nov 2024 - Apr 2028*, Doctor, <img src="images/logos/inf-logo.svg" width="21"/> [School of Informatics](https://informatics.ed.ac.uk/), <img src="images/logos/uoe-logo.svg" width="21"/> [The University of Edinburgh](https://www.ed.ac.uk/), Edinburgh, United Kingdom.
 - *Sep 2023 - Sep 2024*, Master, <img src="images/logos/ala-logo.svg" width="19"/> [Ada Lovelace Academy](https://www.imperial.ac.uk/ada-lovelace-academy/), <img src="images/logos/icl-logo.svg" width="19"/> [Imperial College London](https://www.imperial.ac.uk/), London, United Kingdom.
 - *Sep 2019 - Jun 2023*, Bachelor, <img src="images/logos/scse-logo.svg" width="25"/> [School of Computer Science and Engineering](https://scse.buaa.edu.cn/English/Home.htm), <img src="images/logos/buaa-logo.svg" width="21"/> [Beihang University](https://ev.buaa.edu.cn/), Beijing, China.
 - *Sep 2016 - Jun 2019*, High School Diploma, <img src="images/logos/no1-high-logo.svg" width="22"/> [Changzhou No.1 High School](http://www.yz.czedu.cn/), Changzhou, China.
+
+# 💻 Employment
+- *May 2024 - Feb 2025*, Research Assistant, <img src="images/logos/dsi-logo.svg" width="20"/> [Imperial Data Science Institute](https://www.imperial.ac.uk/data-science/), London, UK.
+- *Feb 2023 - Apr 2023*, Data Scientist Intern, <img src="images/logos/lenovo-logo.svg" width="20"/> [Lenovo](https://www.lenovo.com/), Beijing, China.
+- *Oct 2022 - Jun 2023*, Research Assistant, <img src="images/logos/scse-logo.svg" width="22"/> [Advanced Computer Technology Institute, BUAA](http://www.act.buaa.edu.cn/), Beijing, China.
+- *JuL 2022 - Aug 2022*, Solution Architect Intern, <img src="images/logos/huawei-logo.svg" width="19"/> [Huawei](https://www.huawei.com/), Beijing, China.
+- *Jan 2022 - May 2022*, Research Intern, <img src="images/logos/bcl-logo.svg" width="18"/> [Beijing City Lab](https://www.beijingcitylab.com/), Beijing, China.
 
 # 💬 Invited Talks
 - *Jul 2025*, Towards Robust Multimodal ECG Understanding with LLMs, 1st ICML Workshop on Foundation Models for Structured Data. 
@@ -162,16 +179,8 @@ Liang Cheng<sup>*</sup>, **Mingsheng Cai**<sup>*</sup>, Jiuming Jiang, Luo Mai
 - *Sep 2025 - Jan 2026*, Tutor & Marker, INFR08032 - Software Engineering and Professional Practice, University of Edinburgh, Edinburgh, United Kingdom.
 - *Feb 2022 - Jun 2022*, Teaching Assistant, B1B061060 - Discrete Mathematics, Beihang University, Beijing, China.
 
-# 🛎️ Service
+# 🛎 Academic Service
 - *May 2026*, Reviewer, ICML Workshop on Foundation Models for Structured Data.
-
-
-# 💻 Employment
-- *May 2024 - Feb 2025*, Research Intern, <img src="images/logos/dsi-logo.svg" width="20"/> [Imperial Data Science Institute](https://www.imperial.ac.uk/data-science/), London, UK.
-- *Feb 2023 - Apr 2023*, Intern, <img src="images/logos/lenovo-logo.svg" width="20"/> [Lenovo](https://www.lenovo.com/), Beijing, China.
-- *Oct 2022 - Jun 2023*, Research Intern, <img src="images/logos/scse-logo.svg" width="22"/> [Advanced Computer Technology Institute, BUAA](http://www.act.buaa.edu.cn/), Beijing, China.
-- *JuL 2022 - Aug 2022*, Intern, <img src="images/logos/huawei-logo.svg" width="19"/> [Huawei](https://www.huawei.com/), Beijing, China.
-- *Jan 2022 - May 2022*, Research Intern, <img src="images/logos/bcl-logo.svg" width="18"/> [Beijing City Lab](https://www.beijingcitylab.com/), Beijing, China.
 
 # 🍸 Miscellaneous
 
@@ -181,9 +190,9 @@ Liang Cheng<sup>*</sup>, **Mingsheng Cai**<sup>*</sup>, Jiuming Jiang, Luo Mai
 </summary>
 
 <div style="text-align: center; margin: 20px auto 30px; max-width: 600px; padding: 0 20px;">
-  <div style="font-style: italic; color: #666; font-size: 1.1em; line-height: 1.6;">
+  <div style="font-style: italic; color: #141413; font-size: 1.1em; line-height: 1.6;">
     "Where words fail, music speaks."
-    <div style="margin-top: 10px; font-style: normal; font-size: 0.9em; color: #999;">— Hans Christian Andersen</div>
+    <div style="margin-top: 10px; font-style: normal; font-size: 0.9em; color: #5e5d5a;">— Hans Christian Andersen</div>
   </div>
 </div>
 
@@ -249,9 +258,9 @@ Liang Cheng<sup>*</sup>, **Mingsheng Cai**<sup>*</sup>, Jiuming Jiang, Luo Mai
 </summary>
 
 <div style="text-align: center; margin: 20px auto 30px; max-width: 600px; padding: 0 20px;">
-  <div style="font-style: italic; color: #666; font-size: 1.1em; line-height: 1.6;">
+  <div style="font-style: italic; color: #141413; font-size: 1.1em; line-height: 1.6;">
     "We take photos as a return ticket to a moment otherwise gone."
-    <div style="margin-top: 10px; font-style: normal; font-size: 0.9em; color: #999;">— Katie Thurmes</div>
+    <div style="margin-top: 10px; font-style: normal; font-size: 0.9em; color: #5e5d5a;">— Katie Thurmes</div>
   </div>
 </div>
 
@@ -262,12 +271,12 @@ Liang Cheng<sup>*</sup>, **Mingsheng Cai**<sup>*</sup>, Jiuming Jiang, Luo Mai
     </div>
 
     <!-- Gradient overlay for fade effect -->
-    <div id="photo-fade-overlay" style="position: absolute; bottom: 0; left: 0; right: 0; height: 350px; background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,1) 100%); pointer-events: none; transition: opacity 0.3s ease;"></div>
+    <div id="photo-fade-overlay" style="position: absolute; bottom: 0; left: 0; right: 0; height: 350px; background: linear-gradient(to bottom, rgba(250,249,246,0) 0%, rgba(250,249,246,0.8) 50%, rgba(250,249,246,1) 100%); pointer-events: none; transition: opacity 0.3s ease;"></div>
   </div>
 
   <!-- Show more button -->
-  <div style="text-align: center; margin-top: 20px;">
-    <button id="toggle-photos-btn" onclick="toggleAllPhotos()" style="padding: 10px 20px; background: none; color: #666; border: none; cursor: pointer; font-size: 1.1em; font-weight: 500; transition: all 0.3s ease;">
+  <div style="text-align: center; margin-top: 0px;">
+    <button id="toggle-photos-btn" onclick="toggleAllPhotos()" style="padding: 10px 20px; background: none; color: #5e5d5a; border: none; cursor: pointer; font-size: 1.1em; font-weight: 500; transition: all 0.3s ease;">
       Show All ›
     </button>
   </div>
@@ -360,10 +369,10 @@ function initPhotos() {
   // Add button hover effects
   const toggleBtn = document.getElementById('toggle-photos-btn');
   toggleBtn.onmouseover = function() {
-    this.style.color = '#333';
+    this.style.color = '#141413';
   };
   toggleBtn.onmouseout = function() {
-    this.style.color = '#666';
+    this.style.color = '#5e5d5a';
   };
 }
 

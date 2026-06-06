@@ -9,20 +9,26 @@ main:
   - title: "Publications"
     url: "/#-publications"
 
-  - title: "Honors and Awards"
-    url: "/#-honors-and-awards"
+  - title: "Awards and Honors"
+    url: "/#-awards-and-honors"
 
-  - title: "Educations"
-    url: "/#-educations"
+  - title: "Funding"
+    url: "/#-funding"
 
-  # - title: "Invited Talks"
-  #   url: "/#-invited-talks"
-
-  - title: "Teaching and Service"
-    url: "/#-teaching-and-service"
+  - title: "Education"
+    url: "/#-education"
 
   - title: "Employment"
     url: "/#-employment"
 
-  - title: "Miscellaneous"  
+  - title: "Invited Talks"
+    url: "/#-invited-talks"
+
+  - title: "Teaching"
+    url: "/#-teaching"
+
+  - title: "Academic Service"
+    url: "/#-academic-service"
+
+  - title: "Miscellaneous"
     url: "/#-miscellaneous"
