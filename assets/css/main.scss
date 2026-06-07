@@ -108,6 +108,24 @@ h2 + .paper-box {
     margin-top: 0.5em;
 }
 
+// Inline SVG icons used in section headings (replacing emoji).
+// Fixed-width box so icons of different aspect ratios still align the
+// heading text; the icon is scaled to fit and pinned left.
+.section-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+    object-position: left center;
+    vertical-align: -0.3rem;
+    margin-right: 0.4rem;
+}
+
+// Force all sidebar profile icons to a uniform Obsidian, overriding the
+// theme's per-brand colors (LinkedIn blue, GitHub, etc.).
+.author__urls.social-icons i {
+    color: #141413;
+}
+
 $scroll_offset : 2em;
 h1:before, .anchor:before { 
     content: ''; 

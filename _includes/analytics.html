@@ -1,5 +1,6 @@
 {% if page.analytics != false %}
 
+{% if site.google_analytics_id %}
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_id }}"></script>
 <script>
@@ -9,5 +10,10 @@
 
   gtag('config', "{{ site.google_analytics_id }}");
 </script>
+{% endif %}
+
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e7191f345ec9495c8eefd810c75c6cd4"}'></script>
+<!-- End Cloudflare Web Analytics -->
 
 {% endif %}
