@@ -126,6 +126,23 @@ h2 + .paper-box {
     color: #141413;
 }
 
+// Sidebar profile list (wide layout only): tighten the icon-to-label gap and
+// let long labels wrap with the second line aligned under the label text.
+@media (min-width: 925px) {
+    .author__urls li {
+        white-space: normal;
+    }
+    .author__urls li:not(:has(> a)),
+    .author__urls li > a {
+        display: flex;
+        align-items: baseline;
+    }
+    .author__urls li .fa-fw {
+        flex: none;
+        margin-right: 0.1em;
+    }
+}
+
 $scroll_offset : 2em;
 h1:before, .anchor:before { 
     content: ''; 

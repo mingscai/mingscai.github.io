@@ -498,3 +498,9 @@ document.addEventListener('keydown', function(event) {
   }
 });
 </script>
+
+<!-- On narrow screens (no left sidebar) the visitor map is moved here by JS. -->
+<div id="map-mobile-section" style="display: none;">
+<h1>🌍 Visitors</h1>
+<div id="map-mobile-placeholder"></div>
+</div>

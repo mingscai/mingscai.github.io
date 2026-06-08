@@ -222,9 +222,98 @@
     </div>
   </div>
 
-  <div id="map-container" style="margin-top: 15px; text-align: center;">
-    <script type="text/javascript" id="clustrmaps"
-      src="//cdn.clustrmaps.com/map_v2.js?cl=080808&w=a&t=tt&d=2d78bzBJJfwVANqw1xAHKpqto46rDcz2a3_Z1HQat4s&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080">
-    </script>
+  <div id="visitor-map-sidebar-home">
+    <div id="visitor-map-wrap" style="margin-top: 20px; overflow: hidden; max-width: 100%;">
+      <div id="visitor-map" style="width: 100%; aspect-ratio: 900 / 441; max-width: 100%;"></div>
+    </div>
   </div>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.7.0/dist/jsvectormap.min.css">
+  <script>
+  (function() {
+    if (window.__vmInit) return;
+    window.__vmInit = true;
+    var WORKER_BASE = "https://visitor-map.cetlewa.workers.dev";
+    var BP = 925; // matches the theme's $large breakpoint (sidebar becomes a column)
+    var POINTS = null, mapInstance = null, lastMobile = null;
+
+    // Beacon this visit once per browser session.
+    try {
+      if (!sessionStorage.getItem("vm_beaconed")) {
+        fetch(WORKER_BASE + "/collect", { method: "POST", keepalive: true }).catch(function(){});
+        sessionStorage.setItem("vm_beaconed", "1");
+      }
+    } catch (e) {}
+
+    function isMobile() { return window.innerWidth < BP; }
+
+    // Move the map between the sidebar (desktop) and a bottom-of-page section (mobile).
+    function place() {
+      var wrap = document.getElementById("visitor-map-wrap");
+      var section = document.getElementById("map-mobile-section");
+      var target = document.getElementById(
+        isMobile() ? "map-mobile-placeholder" : "visitor-map-sidebar-home"
+      );
+      if (wrap && target && wrap.parentNode !== target) target.appendChild(wrap);
+      if (section) section.style.display = isMobile() ? "block" : "none";
+      // Height tracks width via CSS aspect-ratio, so nothing to set here.
+    }
+
+    function render() {
+      if (typeof jsVectorMap === "undefined") return;
+      if (mapInstance) { try { mapInstance.destroy(); } catch (e) {} mapInstance = null; }
+      var inner = document.getElementById("visitor-map");
+      if (inner) inner.innerHTML = "";
+      var markers = (POINTS || [])
+        .filter(function(p){ return p.lat != null && p.lng != null; })
+        .map(function(p) {
+          var place = [p.city, p.region, p.country].filter(Boolean).join(", ");
+          return { name: place + " — " + p.count, coords: [p.lat, p.lng] };
+        });
+      mapInstance = new jsVectorMap({
+        selector: "#visitor-map", map: "world",
+        zoomOnScroll: false, zoomButtons: false, backgroundColor: "transparent",
+        regionStyle: { initial: { fill: "#e3e0d8", stroke: "#faf9f6", strokeWidth: 0.4 } },
+        markers: markers,
+        markerStyle: {
+          initial: { fill: "#cc7c5e", stroke: "#ffffff", strokeWidth: 1, r: 4, fillOpacity: 0.85 },
+          hover: { fill: "#141413" }
+        }
+      });
+    }
+
+    function loadScript(src) {
+      return new Promise(function(res, rej) {
+        var s = document.createElement("script");
+        s.src = src; s.onload = res; s.onerror = rej;
+        document.head.appendChild(s);
+      });
+    }
+
+    function init() {
+      lastMobile = isMobile();
+      place();
+      loadScript("https://cdn.jsdelivr.net/npm/jsvectormap@1.7.0/dist/jsvectormap.min.js")
+        .then(function(){ return loadScript("https://cdn.jsdelivr.net/npm/jsvectormap@1.7.0/dist/maps/world.js"); })
+        .then(function(){ return fetch(WORKER_BASE + "/points").then(function(r){ return r.json(); }); })
+        .then(function(points){ POINTS = points || []; render(); })
+        .catch(function(){});
+
+      // Re-place + re-render only when crossing the breakpoint.
+      var t;
+      window.addEventListener("resize", function() {
+        clearTimeout(t);
+        t = setTimeout(function() {
+          var m = isMobile();
+          if (m !== lastMobile) { lastMobile = m; place(); render(); }
+        }, 200);
+      });
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", init);
+    } else {
+      init();
+    }
+  })();
+  </script>
 </div>
