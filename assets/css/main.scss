@@ -143,6 +143,42 @@ h2 + .paper-box {
     }
 }
 
+// Visitor-map hover tooltip: Graphite instead of the default blue, smaller.
+.jvm-tooltip {
+    --jvm-tooltip-bg-color: #5e5d5a;
+    --jvm-tooltip-font-size: 0.72rem;
+    --jvm-tooltip-padding: 2px 6px;
+}
+
+// Visitor-map zoom buttons: horizontal row, anchored bottom-left, Obsidian.
+#visitor-map {
+    --jvm-zoom-btn-bg-color: #141413;
+    --jvm-zoom-btn-color: #ffffff;
+    // Let jsVectorMap handle touch drag/pan instead of the browser scrolling.
+    touch-action: none;
+}
+#visitor-map .jvm-zoom-btn {
+    top: auto;
+    bottom: 4px;
+    font-size: 13px;
+    line-height: var(--jvm-zoom-btn-size);
+}
+#visitor-map .jvm-zoomin {
+    left: 4px;
+}
+#visitor-map .jvm-zoomout {
+    left: calc(8px + var(--jvm-zoom-btn-size));
+}
+// Bigger, easier-to-tap zoom buttons on the full-width mobile map.
+@media (max-width: 924px) {
+    #visitor-map {
+        --jvm-zoom-btn-size: 25px;
+    }
+    #visitor-map .jvm-zoom-btn {
+        font-size: 20px;
+    }
+}
+
 $scroll_offset : 2em;
 h1:before, .anchor:before { 
     content: ''; 
