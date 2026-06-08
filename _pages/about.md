@@ -175,18 +175,18 @@ Liang Cheng<sup>*</sup>, **Mingsheng Cai**<sup>*</sup>, Jiuming Jiang, Luo Mai
 # <span class="anchor" id="-invited-talks"></span><img src="images/icons/invited-talks.svg" class="section-icon"/>Invited Talks
 - *Jul 2025*, Towards Robust Multimodal ECG Understanding with LLMs, 1st ICML Workshop on Foundation Models for Structured Data. 
 
-# 🧑‍🏫 Teaching
+# <span class="anchor" id="-teaching"></span><img src="images/icons/teaching.svg" class="section-icon"/>Teaching
 - *Sep 2025 - Jan 2026*, Tutor & Marker, INFR08032 - Software Engineering and Professional Practice, University of Edinburgh, Edinburgh, United Kingdom.
 - *Feb 2022 - Jun 2022*, Teaching Assistant, B1B061060 - Discrete Mathematics, Beihang University, Beijing, China.
 
-# 🛎 Academic Service
+# <span class="anchor" id="-academic-service"></span><img src="images/icons/academic-service.svg" class="section-icon"/>Academic Service
 - *May 2026*, Reviewer, ICML Workshop on Foundation Models for Structured Data.
 
-# 🍸 Miscellaneous
+# <span class="anchor" id="-miscellaneous"></span><img src="images/icons/miscellaneous.svg" class="section-icon"/>Miscellaneous
 
 <details>
 <summary style="font-size: 1.3em; font-weight: bold; cursor: pointer; margin: 15px 0 10px 0; padding-left: 0; list-style: none;">
-  🎵 Music
+  <img src="images/icons/music.svg" class="section-icon"/>Music
 </summary>
 
 <div style="text-align: center; margin: 20px auto 30px; max-width: 600px; padding: 0 20px;">
@@ -254,7 +254,7 @@ Liang Cheng<sup>*</sup>, **Mingsheng Cai**<sup>*</sup>, Jiuming Jiang, Luo Mai
 
 <details>
 <summary style="font-size: 1.3em; font-weight: bold; cursor: pointer; margin: 15px 0 10px 0; padding-left: 0; list-style: none;">
-  📷 Photography
+  <img src="images/icons/photography.svg" class="section-icon"/>Photography
 </summary>
 
 <div style="text-align: center; margin: 20px auto 30px; max-width: 600px; padding: 0 20px;">
@@ -501,6 +501,6 @@ document.addEventListener('keydown', function(event) {
 
 <!-- On narrow screens (no left sidebar) the visitor map is moved here by JS. -->
 <div id="map-mobile-section" style="display: none;">
-<h1>🌍 Visitors</h1>
+<h1><img src="images/icons/visitor.svg" class="section-icon"/>Visitors</h1>
 <div id="map-mobile-placeholder"></div>
 </div>

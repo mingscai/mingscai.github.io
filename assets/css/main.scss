@@ -162,6 +162,10 @@ h2 + .paper-box {
     bottom: 4px;
     font-size: 13px;
     line-height: var(--jvm-zoom-btn-size);
+    transition: background-color 0.2s ease;
+}
+#visitor-map .jvm-zoom-btn:hover {
+    background-color: #5e5d5a;
 }
 #visitor-map .jvm-zoomin {
     left: 4px;
