@@ -25,15 +25,15 @@ My research interests lie in **AI for Software Engineering (AI4SE)** and **Softw
 
 <div id="news-container" style="position: relative; overflow: hidden; max-height: 175px; transition: max-height 0.5s ease;">
 <div id="news-list" markdown="1">
-- 📰 *Feb 2026*: Glad to present our ECG medical foundation model at the Edinburgh Future Institiute.
-- 🎉 *Aug 2025*: One paper was accepted to <img src="images/logos/acl-logo.svg" width="20"/> EMNLP 2025.
-- 🏆 Jul 2025: Thrilled to receive the Best Paper Award at the FMSD workshop at <img src="images/logos/icml-logo.svg" width="20"/> ICML 2025.
-- 🎉 *Jun 2025*: One paper was accepted as a spotlight presentation at the FMSD workshop at <img src="images/logos/icml-logo.svg" width="20"/> ICML 2025.
-- 📣 *Nov 2024*: I started my Doctor's degree in Informatics at The University of Edinburgh supervised by Dr. Adriana Sejfia and Dr. Amir Shaikhha.
-- 🎉 *Sep 2024*: I graduated with Distinction from Imperial College London.
-- 📰 *May 2024*: Glad to start my capstone project in <img src="images/logos/dsi-logo.svg" width="20"/> [Imperial Data Science Institute](https://www.imperial.ac.uk/data-science/) supervised by Dr. Che Liu and Dr. Rossella Arcucci.
-- 📣 *Sep 2023*: I started my Master's degree in Computational Science and Engineering at Imperial College London.
-- 🎉 *Jun 2023*: I graduated from Beihang University as one of the Distinguished Graduates.
+- *Feb 2026*: Glad to present our ECG medical foundation model at the Edinburgh Future Institiute.
+- *Aug 2025*: One paper was accepted to <img src="images/logos/acl-logo.svg" width="20"/> EMNLP 2025.
+- *Jul 2025*: Thrilled to receive the Best Paper Award at the FMSD workshop at <img src="images/logos/icml-logo.svg" width="20"/> ICML 2025.
+- *Jun 2025*: One paper was accepted as a spotlight presentation at the FMSD workshop at <img src="images/logos/icml-logo.svg" width="20"/> ICML 2025.
+- *Nov 2024*: I started my Doctor's degree in Informatics at The University of Edinburgh supervised by Dr. Adriana Sejfia and Dr. Amir Shaikhha.
+- *Sep 2024*: I graduated with Distinction from Imperial College London.
+- *May 2024*: Glad to start my capstone project in <img src="images/logos/dsi-logo.svg" width="20"/> [Imperial Data Science Institute](https://www.imperial.ac.uk/data-science/) supervised by Dr. Che Liu and Dr. Rossella Arcucci.
+- *Sep 2023*: I started my Master's degree in Computational Science and Engineering at Imperial College London.
+- *Jun 2023*: I graduated from Beihang University as one of the Distinguished Graduates.
 </div>
 <div id="news-fade-overlay" style="position: absolute; bottom: 0; left: 0; right: 0; height: 50px; background: linear-gradient(to bottom, rgba(250,249,246,0) 0%, rgba(250,249,246,0.8) 50%, rgba(250,249,246,1) 100%); pointer-events: none; transition: opacity 0.3s ease;"></div>
 </div>
@@ -180,6 +180,7 @@ Liang Cheng<sup>*</sup>, **Mingsheng Cai**<sup>*</sup>, Jiuming Jiang, Luo Mai
 - *Feb 2022 - Jun 2022*, Teaching Assistant, B1B061060 - Discrete Mathematics, Beihang University, Beijing, China.
 
 # <span class="anchor" id="-academic-service"></span><img src="images/icons/academic-service.svg" class="section-icon"/>Academic Service
+- *Jul 2026*, Reviewer, IEEE Transactions on Medical Imaging.
 - *May 2026*, Reviewer, ICML Workshop on Foundation Models for Structured Data.
 
 # <span class="anchor" id="-miscellaneous"></span><img src="images/icons/miscellaneous.svg" class="section-icon"/>Miscellaneous
