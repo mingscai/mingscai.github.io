@@ -180,7 +180,8 @@ Liang Cheng<sup>*</sup>, **Mingsheng Cai**<sup>*</sup>, Jiuming Jiang, Luo Mai
 - *Feb 2022 - Jun 2022*, Teaching Assistant, B1B061060 - Discrete Mathematics, Beihang University, Beijing, China.
 
 # <span class="anchor" id="-academic-service"></span><img src="images/icons/academic-service.svg" class="section-icon"/>Academic Service
-- *Jul 2026*, Reviewer, IEEE Transactions on Medical Imaging.
+- *Jul 2026*, Reviewer, Conference on Neural Information Processing Systems.
+- *Jun 2026*, Reviewer, IEEE Transactions on Medical Imaging.
 - *May 2026*, Reviewer, ICML Workshop on Foundation Models for Structured Data.
 
 # <span class="anchor" id="-miscellaneous"></span><img src="images/icons/miscellaneous.svg" class="section-icon"/>Miscellaneous
