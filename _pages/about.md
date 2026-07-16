@@ -268,7 +268,7 @@ Liang Cheng<sup>*</sup>, **Mingsheng Cai**<sup>*</sup>, Jiuming Jiang, Luo Mai
 
 <div style="margin-top: 20px; margin-bottom: 30px; position: relative;">
   <div id="photo-gallery-container" style="position: relative; overflow: hidden; max-height: 700px; transition: max-height 0.5s ease;">
-    <div id="photo-gallery" style="column-count: 4; column-gap: 15px; padding: 10px;">
+    <div id="photo-gallery">
       <!-- Photos will be inserted here by JavaScript -->
     </div>
 
@@ -304,6 +304,8 @@ const allPhotos = [
   'images/photos/DSCF2913.jpg',
   'images/photos/DSCF1709.jpg',
   'images/photos/DSCF1730.jpg',
+  'images/photos/DSCF9885.jpg',
+  'images/photos/DSCF9892.jpg',
   'images/photos/IMG_0577.jpg',
   'images/photos/IMG_1164.jpg',
   'images/photos/IMG_1183.jpg',
@@ -312,8 +314,20 @@ const allPhotos = [
 
 let showingAll = false;
 
-// Panoramic photos (aspect ratio >= this) break out to span the full width
+// Panoramic photos span extra columns: three, or all four once they get this wide
 const WIDE_ASPECT_RATIO = 2.0;
+const FULL_WIDTH_ASPECT_RATIO = 3.5;
+
+// Must match the grid's column-gap and grid-auto-rows in the stylesheet below.
+// Fine-grained rows are what let each tile's height follow its own aspect ratio.
+const GRID_GAP = 15;
+const ROW_HEIGHT = 4;
+
+function columnSpanFor(ratio) {
+  if (ratio >= FULL_WIDTH_ASPECT_RATIO) return 4;
+  if (ratio >= WIDE_ASPECT_RATIO) return 3;
+  return 1;
+}
 
 // Fisher-Yates shuffle algorithm
 function shuffleArray(array) {
@@ -336,10 +350,12 @@ function probeAspectRatio(src) {
 }
 
 // Create one gallery tile
-function createPhotoTile(photo, isWide) {
+function createPhotoTile(photo, ratio) {
   const photoDiv = document.createElement('div');
-  photoDiv.className = isWide ? 'photo-item wide' : 'photo-item';
-  photoDiv.style.cssText = 'break-inside: avoid; margin-bottom: 15px; position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); cursor: pointer; transition: opacity 0.3s ease;';
+  photoDiv.className = 'photo-item';
+  photoDiv.dataset.ratio = ratio;
+  photoDiv.dataset.colSpan = columnSpanFor(ratio);
+  photoDiv.style.cssText = 'margin-bottom: 15px; position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); cursor: pointer; transition: opacity 0.3s ease;';
 
   photoDiv.onclick = function() { openImageModal(this); };
 
@@ -354,6 +370,26 @@ function createPhotoTile(photo, isWide) {
   return photoDiv;
 }
 
+// Size every tile in grid rows so the masonry packs tightly. Panoramas keep their
+// extra column span, and `grid-auto-flow: dense` backfills the columns they leave open.
+function layoutGallery() {
+  const gallery = document.getElementById('photo-gallery');
+  const styles = window.getComputedStyle(gallery);
+  const columns = styles.gridTemplateColumns.split(' ').filter(Boolean).length;
+  const contentWidth = gallery.clientWidth
+    - parseFloat(styles.paddingLeft) - parseFloat(styles.paddingRight);
+  if (contentWidth <= 0) return;  // collapsed <details>: measure once it opens
+  const columnWidth = (contentWidth - GRID_GAP * (columns - 1)) / columns;
+
+  gallery.querySelectorAll('.photo-item').forEach((item) => {
+    const span = Math.min(parseInt(item.dataset.colSpan, 10), columns);
+    const width = columnWidth * span + GRID_GAP * (span - 1);
+    const height = width / parseFloat(item.dataset.ratio);
+    item.style.gridColumn = 'span ' + span;
+    item.style.gridRow = 'span ' + Math.ceil((height + GRID_GAP) / ROW_HEIGHT);
+  });
+}
+
 // Initialize and render photos
 function initPhotos() {
   const gallery = document.getElementById('photo-gallery');
@@ -361,11 +397,14 @@ function initPhotos() {
   // Probe aspect ratios first so panoramic photos can be pinned to the top
   // (in their original order), while the rest are shuffled.
   Promise.all(allPhotos.map(probeAspectRatio)).then((ratios) => {
-    const widePhotos = allPhotos.filter((_, i) => ratios[i] >= WIDE_ASPECT_RATIO);
-    const otherPhotos = shuffleArray(allPhotos.filter((_, i) => ratios[i] < WIDE_ASPECT_RATIO));
+    const entries = allPhotos.map((photo, i) => ({ photo, ratio: ratios[i] }));
+    const widePhotos = entries.filter(({ ratio }) => ratio >= WIDE_ASPECT_RATIO);
+    const otherPhotos = shuffleArray(entries.filter(({ ratio }) => ratio < WIDE_ASPECT_RATIO));
 
-    widePhotos.forEach((photo) => gallery.appendChild(createPhotoTile(photo, true)));
-    otherPhotos.forEach((photo) => gallery.appendChild(createPhotoTile(photo, false)));
+    widePhotos.concat(otherPhotos).forEach(({ photo, ratio }) => {
+      gallery.appendChild(createPhotoTile(photo, ratio));
+    });
+    layoutGallery();
   });
 
   // Add button hover effects
@@ -376,6 +415,17 @@ function initPhotos() {
   toggleBtn.onmouseout = function() {
     this.style.color = '#5e5d5a';
   };
+
+  // Row spans are derived from the column width, so re-run whenever that changes:
+  // on viewport resize, and on the 0 -> full jump when the <details> first opens.
+  // Height changes must not re-trigger us, or laying out would loop.
+  let lastWidth = 0;
+  new ResizeObserver(function(entries) {
+    const width = entries[0].contentRect.width;
+    if (width === lastWidth) return;
+    lastWidth = width;
+    layoutGallery();
+  }).observe(document.getElementById('photo-gallery'));
 }
 
 // Toggle show all/less photos
@@ -408,21 +458,32 @@ if (document.readyState === 'loading') {
 </details>
 
 <style>
-/* Panoramic photos break out of the masonry to span the full width */
-#photo-gallery .photo-item.wide {
-  column-span: all;
+/* Pinterest-style masonry layout - responsive.
+   Row heights are deliberately tiny: each tile spans however many rows its own
+   aspect ratio needs (see layoutGallery), which is what staggers the columns.
+   `dense` lets single-column photos backfill whatever a panorama leaves free. */
+#photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 4px;
+  grid-auto-flow: row dense;
+  column-gap: 15px;
+  row-gap: 0;
+  padding: 10px;
+  /* Let each tile keep its photo's exact height. Stretching it to fill the
+     rounded-up row span would leave a sliver of background under the image. */
+  align-items: start;
 }
 
-/* Pinterest-style masonry layout - responsive */
 @media (max-width: 768px) {
   #photo-gallery {
-    column-count: 2 !important;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 480px) {
   #photo-gallery {
-    column-count: 1 !important;
+    grid-template-columns: 1fr;
   }
 }
 
