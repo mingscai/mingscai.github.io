@@ -35,11 +35,11 @@ My research interests lie in **AI for Software Engineering (AI4SE)** and **Softw
 - *Sep 2023*: I started my Master's degree in Computational Science and Engineering at Imperial College London.
 - *Jun 2023*: I graduated from Beihang University as one of the Distinguished Graduates.
 </div>
-<div id="news-fade-overlay" style="position: absolute; bottom: 0; left: 0; right: 0; height: 50px; background: linear-gradient(to bottom, rgba(250,249,246,0) 0%, rgba(250,249,246,0.8) 50%, rgba(250,249,246,1) 100%); pointer-events: none; transition: opacity 0.3s ease;"></div>
+<div id="news-fade-overlay" style="position: absolute; bottom: 0; left: 0; right: 0; height: 50px; background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,1) 100%); pointer-events: none; transition: opacity 0.3s ease;"></div>
 </div>
 
 <div style="text-align: center; margin-top: 0px; margin-bottom: -20px;">
-  <button id="toggle-news-btn" onclick="toggleAllNews()" style="padding: 10px 20px; background: none; color: #5e5d5a; border: none; cursor: pointer; font-size: 1.1em; font-weight: 500; transition: all 0.3s ease;">
+  <button id="toggle-news-btn" onclick="toggleAllNews()" style="padding: 10px 20px; background: none; color: #666; border: none; cursor: pointer; font-size: 1.1em; font-weight: 500; transition: all 0.3s ease;">
     Show All ›
   </button>
 </div>
@@ -68,8 +68,8 @@ My research interests lie in **AI for Software Engineering (AI4SE)** and **Softw
 
   var btn = document.getElementById('toggle-news-btn');
   if (btn) {
-    btn.onmouseover = function() { this.style.color = '#141413'; };
-    btn.onmouseout = function() { this.style.color = '#5e5d5a'; };
+    btn.onmouseover = function() { this.style.color = '#333'; };
+    btn.onmouseout = function() { this.style.color = '#666'; };
   }
 })();
 </script>
@@ -192,9 +192,9 @@ Liang Cheng<sup>*</sup>, **Mingsheng Cai**<sup>*</sup>, Jiuming Jiang, Luo Mai
 </summary>
 
 <div style="text-align: center; margin: 20px auto 30px; max-width: 600px; padding: 0 20px;">
-  <div style="font-style: italic; color: #141413; font-size: 1.1em; line-height: 1.6;">
+  <div style="font-style: italic; color: #666; font-size: 1.1em; line-height: 1.6;">
     "Where words fail, music speaks."
-    <div style="margin-top: 10px; font-style: normal; font-size: 0.9em; color: #5e5d5a;">— Hans Christian Andersen</div>
+    <div style="margin-top: 10px; font-style: normal; font-size: 0.9em; color: #999;">— Hans Christian Andersen</div>
   </div>
 </div>
 
@@ -260,9 +260,9 @@ Liang Cheng<sup>*</sup>, **Mingsheng Cai**<sup>*</sup>, Jiuming Jiang, Luo Mai
 </summary>
 
 <div style="text-align: center; margin: 20px auto 30px; max-width: 600px; padding: 0 20px;">
-  <div style="font-style: italic; color: #141413; font-size: 1.1em; line-height: 1.6;">
+  <div style="font-style: italic; color: #666; font-size: 1.1em; line-height: 1.6;">
     "We take photos as a return ticket to a moment otherwise gone."
-    <div style="margin-top: 10px; font-style: normal; font-size: 0.9em; color: #5e5d5a;">— Katie Thurmes</div>
+    <div style="margin-top: 10px; font-style: normal; font-size: 0.9em; color: #999;">— Katie Thurmes</div>
   </div>
 </div>
 
@@ -273,12 +273,12 @@ Liang Cheng<sup>*</sup>, **Mingsheng Cai**<sup>*</sup>, Jiuming Jiang, Luo Mai
     </div>
 
     <!-- Gradient overlay for fade effect -->
-    <div id="photo-fade-overlay" style="position: absolute; bottom: 0; left: 0; right: 0; height: 350px; background: linear-gradient(to bottom, rgba(250,249,246,0) 0%, rgba(250,249,246,0.8) 50%, rgba(250,249,246,1) 100%); pointer-events: none; transition: opacity 0.3s ease;"></div>
+    <div id="photo-fade-overlay" style="position: absolute; bottom: 0; left: 0; right: 0; height: 350px; background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,1) 100%); pointer-events: none; transition: opacity 0.3s ease;"></div>
   </div>
 
   <!-- Show more button -->
   <div style="text-align: center; margin-top: 0px;">
-    <button id="toggle-photos-btn" onclick="toggleAllPhotos()" style="padding: 10px 20px; background: none; color: #5e5d5a; border: none; cursor: pointer; font-size: 1.1em; font-weight: 500; transition: all 0.3s ease;">
+    <button id="toggle-photos-btn" onclick="toggleAllPhotos()" style="padding: 10px 20px; background: none; color: #666; border: none; cursor: pointer; font-size: 1.1em; font-weight: 500; transition: all 0.3s ease;">
       Show All ›
     </button>
   </div>
@@ -410,10 +410,10 @@ function initPhotos() {
   // Add button hover effects
   const toggleBtn = document.getElementById('toggle-photos-btn');
   toggleBtn.onmouseover = function() {
-    this.style.color = '#141413';
+    this.style.color = '#333';
   };
   toggleBtn.onmouseout = function() {
-    this.style.color = '#5e5d5a';
+    this.style.color = '#666';
   };
 
   // Row spans are derived from the column width, so re-run whenever that changes:
