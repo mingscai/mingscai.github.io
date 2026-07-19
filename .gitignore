@@ -2,6 +2,10 @@ _site/
 push.sh
 .DS_Store
 
+# Local bundler install (BUNDLE_PATH: vendor/bundle)
+.bundle/
+vendor/
+
 .vscode/
 .idea/
 .claude/
