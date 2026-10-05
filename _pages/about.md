@@ -81,16 +81,16 @@ My research interests lie in **AI for Software Engineering (AI4SE)** and **Softw
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--cornflower">Under Review</div><img src='images/projects/prismvul.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[An Empirical Study of Third-Party Reports and Vulnerability Localization](#)
+[An Empirical Study of Vulnerability Localization with Third-Party Reports](#)
 
 **Mingsheng Cai**, Joanna C. S. Santos, Adriana Sejfia
 
 [Code](#) | [Data](#)
-- PrismVul: a curated benchmark of 1,440 Chromium vulnerabilities for function- and file-level localization, scrubbed of noise and post-fix leakage.
+- PrismVul: a curated benchmark of 6,851 vulnerability entries from 831 OSS projects across 11 programming languages, linking sanitized third-party reports to function-level vulnerable code and post-fix summaries.
 
-- Feasibility study on localizing vulnerabilities from a third-party report, which says how a flaw manifests rather than where it lives.
+- A large-scale study of vulnerability localization with historical reports, comparing statistical, ML, code retrieval, and LLM-agent methods in both within-project and cross-project settings.
 
-- Benchmarks statistical, ML, retrieval, and agentic methods on Recall@10 and MAP; LLM agent + ICL proves most viable (Recall@10 63.51%, MAP 49.86%).
+- LLM agents perform best, reaching 86.09% Recall@5 within projects and 81.76% across previously unseen projects; historical third-party reports consistently help, while post-fix summaries provide a viable substitute for agent-based localization.
 </div>
 </div>
 
