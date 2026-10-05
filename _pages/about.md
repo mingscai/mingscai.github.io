@@ -86,11 +86,11 @@ My research interests lie in **AI for Software Engineering (AI4SE)** and **Softw
 **Mingsheng Cai**, Joanna C. S. Santos, Adriana Sejfia
 
 [Code](#) | [Data](#)
-- PrismVul: a curated benchmark of 6,851 vulnerability entries from 831 OSS projects across 11 programming languages, linking sanitized third-party reports to function-level vulnerable code and post-fix summaries.
+- PrismVul: 6,851 vulnerability entries from 831 OSS projects in 11 languages, linking sanitized third-party reports to vulnerable functions.
 
-- A large-scale study of vulnerability localization with historical reports, comparing statistical, ML, code retrieval, and LLM-agent methods in both within-project and cross-project settings.
+- Compares statistical, ML, code retrieval, and LLM-agent localization in within- and cross-project settings.
 
-- LLM agents perform best, reaching 86.09% Recall@5 within projects and 81.76% across previously unseen projects; historical third-party reports consistently help, while post-fix summaries provide a viable substitute for agent-based localization.
+- LLM agents lead (Recall@5 86.09% within, 81.76% cross-project); historical reports help, and post-fix summaries are a viable substitute.
 </div>
 </div>
 
