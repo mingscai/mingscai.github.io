@@ -182,7 +182,6 @@ Liang Cheng<sup>*</sup>, **Mingsheng Cai**<sup>*</sup>, Jiuming Jiang, Luo Mai
 
 # <span class="anchor" id="-academic-service"></span><img src="images/icons/academic-service.svg" class="section-icon"/>Academic Service
 - *Sep 2026*, Reviewer, IEEE Transactions on Multimedia.
-- *Sep 2026*, Program Committee Member & Reviewer, CIKM Workshop on LLM Agents for Social Simulation.
 - *Jul 2026*, Reviewer, Conference on Neural Information Processing Systems.
 - *Jun 2026*, Reviewer, IEEE Transactions on Medical Imaging.
 - *May 2026*, Reviewer, ICML Workshop on Foundation Models for Structured Data.
