@@ -96,7 +96,7 @@ My research interests lie in **AI for Software Engineering (AI4SE)** and **Softw
 
 ## <span class="anchor" id="-trustworthy-llms"></span><img src="images/icons/trustworthy-llms.svg" class="section-icon"/>Trustworthy LLMs
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--cornflower">Under Review</div><img src='images/projects/feasigen.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--cornflower">arXiv:2605.28532</div><img src='images/projects/feasigen.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Do Agents Know What They Can't Do? Evaluating Feasibility Awareness in Tool-Using Agents](https://arxiv.org/abs/2605.28532)
