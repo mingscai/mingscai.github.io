@@ -25,7 +25,7 @@ My research interests lie in **AI for Software Engineering (AI4SE)** and **Softw
 
 <div id="news-container" style="position: relative; overflow: hidden; max-height: 175px; transition: max-height 0.5s ease;">
 <div id="news-list" markdown="1">
-- *Feb 2026*: Glad to present our ECG medical foundation model at the Edinburgh Future Institiute.
+- *Feb 2026*: Glad to present our ECG medical foundation model at the Edinburgh Future Institute.
 - *Aug 2025*: One paper was accepted to <img src="images/logos/acl-logo.svg" width="20"/> EMNLP 2025.
 - *Jul 2025*: Thrilled to receive the Best Paper Award at the FMSD workshop at <img src="images/logos/icml-logo.svg" width="20"/> ICML 2025.
 - *Jun 2025*: One paper was accepted as a spotlight presentation at the FMSD workshop at <img src="images/logos/icml-logo.svg" width="20"/> ICML 2025.
@@ -169,17 +169,20 @@ Liang Cheng<sup>*</sup>, **Mingsheng Cai**<sup>*</sup>, Jiuming Jiang, Luo Mai
 - *May 2024 - Feb 2025*, Research Assistant, <img src="images/logos/dsi-logo.svg" width="20"/> [Imperial Data Science Institute](https://www.imperial.ac.uk/data-science/), London, UK.
 - *Feb 2023 - Apr 2023*, Data Scientist Intern, <img src="images/logos/lenovo-logo.svg" width="20"/> [Lenovo](https://www.lenovo.com/), Beijing, China.
 - *Oct 2022 - Jun 2023*, Research Assistant, <img src="images/logos/scse-logo.svg" width="22"/> [Advanced Computer Technology Institute, BUAA](http://www.act.buaa.edu.cn/), Beijing, China.
-- *JuL 2022 - Aug 2022*, Solution Architect Intern, <img src="images/logos/huawei-logo.svg" width="19"/> [Huawei](https://www.huawei.com/), Beijing, China.
+- *Jul 2022 - Aug 2022*, Solution Architect Intern, <img src="images/logos/huawei-logo.svg" width="19"/> [Huawei](https://www.huawei.com/), Beijing, China.
 - *Jan 2022 - May 2022*, Research Intern, <img src="images/logos/bcl-logo.svg" width="18"/> [Beijing City Lab](https://www.beijingcitylab.com/), Beijing, China.
 
 # <span class="anchor" id="-invited-talks"></span><img src="images/icons/invited-talks.svg" class="section-icon"/>Invited Talks
 - *Jul 2025*, Towards Robust Multimodal ECG Understanding with LLMs, 1st ICML Workshop on Foundation Models for Structured Data. 
 
 # <span class="anchor" id="-teaching"></span><img src="images/icons/teaching.svg" class="section-icon"/>Teaching
+- *Sep 2026 - Jan 2027*, Tutor & Marker, INFR10057 - Software Testing, University of Edinburgh, Edinburgh, United Kingdom.
 - *Sep 2025 - Jan 2026*, Tutor & Marker, INFR08032 - Software Engineering and Professional Practice, University of Edinburgh, Edinburgh, United Kingdom.
 - *Feb 2022 - Jun 2022*, Teaching Assistant, B1B061060 - Discrete Mathematics, Beihang University, Beijing, China.
 
 # <span class="anchor" id="-academic-service"></span><img src="images/icons/academic-service.svg" class="section-icon"/>Academic Service
+- *Sep 2026*, Reviewer, IEEE Transactions on Multimedia.
+- *Sep 2026*, Program Committee Member & Reviewer, CIKM Workshop on LLM Agents for Social Simulation.
 - *Jul 2026*, Reviewer, Conference on Neural Information Processing Systems.
 - *Jun 2026*, Reviewer, IEEE Transactions on Medical Imaging.
 - *May 2026*, Reviewer, ICML Workshop on Foundation Models for Structured Data.
