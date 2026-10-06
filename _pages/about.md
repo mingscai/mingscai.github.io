@@ -157,7 +157,7 @@ Liang Cheng<sup>*</sup>, **Mingsheng Cai**<sup>*</sup>, Jiuming Jiang, Luo Mai
 - *Oct 2025*, IGS PGR Travel Fund, University of Edinburgh.
 - *Oct 2024*, School of Informatics Scholarship, University of Edinburgh.
 - *Oct 2022*, Future Star Scholarship, Ministry of Education of the People's Republic of China.
-- *Oct 2022*, Huawei Scholarship, Huawei.
+{% comment %}- *Oct 2022*, Huawei Scholarship, Huawei.{% endcomment %}
 
 # <span class="anchor" id="-education"></span><img src="images/icons/education.svg" class="section-icon"/>Education
 - *Nov 2024 - Apr 2028*, Doctor, <img src="images/logos/inf-logo.svg" width="21"/> [School of Informatics](https://informatics.ed.ac.uk/), <img src="images/logos/uoe-logo.svg" width="21"/> [The University of Edinburgh](https://www.ed.ac.uk/), Edinburgh, United Kingdom.
