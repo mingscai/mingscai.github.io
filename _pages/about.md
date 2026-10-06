@@ -169,7 +169,7 @@ Liang Cheng<sup>*</sup>, **Mingsheng Cai**<sup>*</sup>, Jiuming Jiang, Luo Mai
 - *May 2024 - Feb 2025*, Research Assistant, <img src="images/logos/dsi-logo.svg" width="20"/> [Imperial Data Science Institute](https://www.imperial.ac.uk/data-science/), London, UK.
 - *Feb 2023 - Apr 2023*, Data Scientist Intern, <img src="images/logos/lenovo-logo.svg" width="20"/> [Lenovo](https://www.lenovo.com/), Beijing, China.
 - *Oct 2022 - Jun 2023*, Research Assistant, <img src="images/logos/scse-logo.svg" width="22"/> [Advanced Computer Technology Institute, BUAA](http://www.act.buaa.edu.cn/), Beijing, China.
-- *Jul 2022 - Aug 2022*, Solution Architect Intern, <img src="images/logos/huawei-logo.svg" width="19"/> [Huawei](https://www.huawei.com/), Beijing, China.
+{% comment %}- *Jul 2022 - Aug 2022*, Solution Architect Intern, <img src="images/logos/huawei-logo.svg" width="19"/> [Huawei](https://www.huawei.com/), Beijing, China.{% endcomment -%}
 - *Jan 2022 - May 2022*, Research Intern, <img src="images/logos/bcl-logo.svg" width="18"/> [Beijing City Lab](https://www.beijingcitylab.com/), Beijing, China.
 
 # <span class="anchor" id="-invited-talks"></span><img src="images/icons/invited-talks.svg" class="section-icon"/>Invited Talks
