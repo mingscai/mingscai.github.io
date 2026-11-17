@@ -315,7 +315,8 @@ const allPhotos = [
   'images/photos/IMG_0577.jpg',
   'images/photos/IMG_1164.jpg',
   'images/photos/IMG_1183.jpg',
-  'images/photos/IMG_1344.jpg'
+  'images/photos/IMG_1344.jpg',
+  'images/photos/IMG_6442.jpg'
 ];
 
 let showingAll = false;
